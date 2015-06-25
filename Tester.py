@@ -4,9 +4,7 @@ from Poem import Poem
 from Poem import emptyCard
 X_CHOICES = 4
 
-allPoems = [Poem(i+1) for i in range(100)]
-learned = [100,13,15,17,18,2,21,22,23,28,32,33,35,37,40,42,46,47,48,51,57,59,6,61,62,63,65,66,67,70,71,74,75,77,81,83,85,87,9,91,93,96,98,99]
-lp = [allPoems[i-1] for i in learned]
+
 
 class Tester:
     def __init__(self,poems):
@@ -78,6 +76,11 @@ class Tester:
             if i.kimariji[:-1] == unique:
                 return i.number
 
+
+
+allPoems = [Poem(i+1) for i in range(100)]
+learned = [100,13,15,17,18,2,21,22,23,28,32,33,35,37,40,42,46,47,48,51,57,59,6,61,62,63,65,66,67,70,71,74,75,77,81,83,85,87,9,91,93,96,98,99]
+lp = [allPoems[i-1] for i in learned]
 t = Tester(allPoems)
 
                 

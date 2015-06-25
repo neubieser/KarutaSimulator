@@ -39,7 +39,7 @@ class Card:
     def __init__(self, number):
 
         self.number = number
-        img = Image.open('/Users/neub/Karuta/Images/'+str(number)+'.png')
+        img = Image.open('Images/'+str(number)+'.png')
         img = img.resize((int(625*scale), int(873*scale)),Image.ANTIALIAS)
         self.width,self.height = img.size
         self.baseimg = img
@@ -68,7 +68,7 @@ class Karuta(Frame):
             self.activeCard = randomCard
             print(randomCard)
             def doInBackground():
-                call(['afplay','/Users/neub/Karuta/Audio/Audio'+str(randomCard)+'.m4a'])
+                call(['afplay','Audio/Audio'+str(randomCard)+'.m4a'])
             t= threading.Thread(target=doInBackground, args=())
             t.start()
     def reveal(self):

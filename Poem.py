@@ -1,6 +1,6 @@
 class Poem:
     def __init__(self,number):
-        with open('/Users/neub/Karuta/poems/poem'+str(number)+'.kar', 'r') as f:
+        with open('poems/poem'+str(number)+'.kar', 'r') as f:
             c = f.readlines()
             self.author = c[0]
             self.verse1 = c[1]

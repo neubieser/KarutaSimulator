@@ -4,11 +4,11 @@ import re
 ls = []
 lsr = []
 lsjd = []
-with open('/Users/neub/Karuta/poems/English.txt', 'r') as f:
+with open('poems/English.txt', 'r') as f:
     ls = f.readlines()
-with open('/Users/neub/Karuta/poems/Romaji.txt', 'r') as f:
+with open('poems/Romaji.txt', 'r') as f:
     lsr = f.readlines()
-with open('/Users/neub/Karuta/poems/Japanese.UTF8', 'rb"utf-8"') as f:
+with open('poems/Japanese.UTF8', 'rb"utf-8"') as f:
     lsjd = f.readlines()
 lsj = []
 for i in range(len(lsjd)):
@@ -40,7 +40,7 @@ poems[1] = parse(lsr)
 poems[2] = parse(lsj)
 
 for poem in range(100):
-    with open('/Users/neub/Karuta/poems/poem'+str(poem+1)+'.kar', 'w+') as f:
+    with open('poems/poem'+str(poem+1)+'.kar', 'w+') as f:
         f.write(poems[0][poem][0])
         f.write(poems[0][poem][1])
         f.write(poems[0][poem][2])
@@ -51,12 +51,12 @@ for poem in range(100):
         f.write(poems[2][poem][1])
         f.write(poems[2][poem][2])
 u = []
-with open('/Users/neub/Karuta/unique.txt','r') as f:
+with open('unique.txt','r') as f:
     u = f.readlines()
 lines = []
 un = []
 v = []
-with open('/Users/neub/Karuta/poems/2ndVerse.UTF8','rb"utf-8"') as f:
+with open('poems/2ndVerse.UTF8','rb"utf-8"') as f:
     lines = f.readlines()
 for i in lines:
     if len(i) < 20:
@@ -64,7 +64,7 @@ for i in lines:
     else:
         v.append(i)
 for i in range(1,101):
-        with open('/Users/neub/Karuta/poems/poem'+str(i)+'.kar','a') as g:
+        with open('poems/poem'+str(i)+'.kar','a') as g:
             g.write(u[i-1])
             le = len(u[i-1].split())
             g.write((poems[2][i-1][1].decode('utf-8').replace('|','')[:le]+'\n').encode('utf-8'))

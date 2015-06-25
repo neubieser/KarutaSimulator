@@ -1,5 +1,6 @@
 Hey check out this fun Karuta stuff I have.
-Run Tester.py to test your ability to recognize the poems.
-Run UI/KarutaSimulator.py to try out a "real game"
+Run ./play to try out a "real game"
+
+Use python 2.7
 
 This is very much WIP
