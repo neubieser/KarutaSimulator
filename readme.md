@@ -1,3 +1,7 @@
+Requirements:
+* Pillow
+
+
 Hey check out this fun Karuta stuff I have.
 Run ./play to try out a "real game"
 
@@ -9,5 +13,6 @@ How to play:
 * Have fun!
 
 Use python 2.7
+
 
 This is very much WIP
