@@ -1,0 +1,2210 @@
+<html>
+<head><title>Ogura Hyakunin Isshu</title></head>
+<body background=/japanese/hyakunin/images/backg1.gif 
+text=#000000 link="#000080" vlink="#800000">
+<center>
+<hr width=30% size=4>
+<a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w">Search</a>
+<hr width=50% size=4> 
+<br></center>
+<lg><a name="eng1"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna1.jpg">1</a></h3></center>
+<br><center>Emperor Tenchi</center>
+<br>Coarse the rush-mat roof
+<br>Sheltering the harvest-hut
+<br>Of the autumn rice-field;
+<br>
+<br>And my sleeves are growing wet
+<br>With the moisture dripping through.
+<br>
+<center>
+<hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom1"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc1"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng2"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna2.jpg">2</a></h3></center>
+<br><center>Empress Jito</center>
+<br>The spring has passed
+<br>And the summer come again;
+<br>For the silk-white robes,
+<br>
+<br>So they say, are spread to dry
+<br>On the "Mount of Heaven's Perfume."
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom2"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc2"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng3"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna3.jpg">3</a></h3></center>
+<br><center>Kakinomoto no Hitomaro</center>
+<br>Oh, the foot-drawn trail
+<br>Of the mountain-pheasant's tail
+<br>Drooped like down-curved branch!
+<br>
+<br>Through this long, long-dragging night
+<br>Must I lie in bed alone?
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |  
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom3"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc3"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng4"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna4.jpg">4</a></h3></center>
+<br><center>Yamabe no Akahito</center>
+<br>When I take the path
+<br>To Tago's coast, I see
+<br>Perfect whiteness laid
+<br>
+<br>On Mount Fuji's lofty peak
+<br>By the drift of falling snow.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |  
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom4"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc4"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng5"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna5.jpg">5</a></h3></center>
+<br><center>Sarumaru</center>
+<br>In the mountain depths,
+<br>Treading through the crimson leaves,
+<br>The wandering stag calls.
+<br>
+<br>When I hear the lonely cry,
+<br>Sad--how sad!--the autumn is.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |  
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom5"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc5"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng6"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna6.jpg">6</a></h3></center>
+<br><center>Otomo no Yakamochi</center>
+<br>If I see that bridge
+<br>That is spanned by flights of magpies
+<br>Across the arc of heaven
+<br>
+<br>Made white with a deep-laid frost,
+<br>Then the night is almost past.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |  
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom6"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc6"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng7"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna7.jpg">7</a></h3></center>
+<br><center>Abe no Nakamaro</center>
+<br>When I look up at
+<br>The wide-stretched plain of heaven,
+<br>Is the moon the same
+<br>
+<br>That rose on Mount Mikasa
+<br>In the land of Kasuga?
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |  
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom7"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc7"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng8"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna8.jpg">8</a></h3></center>
+<br><center>The Monk Kisen</center>
+<br>My lowly hut is
+<br>Southeast from the capital.
+<br>Thus I choose to live.
+<br>
+<br>And the world in which I live
+<br>Men have named a "Mount of Gloom."
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br> | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom8"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc8"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng9"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna9.jpg">9</a></h3></center>
+<br><center>Ono no Komachi</center>
+<br>Color of the flower
+<br>Has already faded away,
+<br>While in idle thoughts
+<br>
+<br>My life passes vainly by,
+<br>As I watch the long rains fall.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom9"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc9"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng10"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna10.jpg">10</a></h3></center>
+<br><center>Semimaru</center>
+<br>Truly, this is where
+<br>Travelers who go or come
+<br>Over parting ways--
+<br>
+<br>Friends or strangers--all must meet:
+<br>The gate of "Meeting Hill."
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom10"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc10"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng11"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna11.jpg">11</a></h3></center>
+<br><center>Ono no Takamura</center>
+<br>Over the wide sea
+<br>Towards its many distant isles
+<br>My ship sets sail.
+<br>
+<br>Will the fishing boats thronged here
+<br>Proclaim my journey to the world?
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom11"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc11"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng12"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna12.jpg">12</a></h3></center>
+<br><center>The Monk Henjo</center>
+<br>Let the winds of heaven
+<br>Blow through the paths among the clouds
+<br>And close their gates.
+<br>
+<br>Then for a while I could detain
+<br>These messengers in maiden form.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom12"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc12"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng13"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna13.jpg">13</a></h3></center>
+<br><center>Emperor Yozei </center>
+<br>From Tsukuba's peak
+<br>Falling waters have become
+<br>Mina's still, full flow:
+<br>
+<br>So my love has grown to be
+<br>Like the river's quiet deeps. 
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom13"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc13"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng14"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna14.jpg">14</a></h3></center>
+<br><center>Minamoto no Toru</center>
+<br>Like Michinoku prints
+<br>Of the tangled leaves of ferns,
+<br>It is because of you
+<br>
+<br>That I have become confused;
+<br>But my love for you remains.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom14"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc14"
+target="euc">Japanese -></a>
+ | </center>
+<hr width=50% size=4> </lg><lg><a name="eng15"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna15.jpg">15</a></h3></center>
+<br><center>Emperor Koko</center>
+<br>It is for your sake
+<br>That I walk the fields in spring,
+<br>Gathering green herbs,
+<br>
+<br>While my garment's hanging sleeves
+<br>Are speckled with falling snow.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom15"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc15"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng16"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna16.jpg">16</a></h3></center>
+<br><center>Ariwara no Yukihira</center>
+<br>Though we are parted,
+<br>If on Mount Inaba's peak
+<br>I should hear the sound
+<br>
+<br>Of the pine trees growing there,
+<br>I'll come back again to you.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom16"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc16"
+target="euc">Japanese -></a>
+ | 
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng17"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna17.jpg">17</a></h3></center>
+<br><center>Ariwara no Narihira</center>
+<br>Even when the gods
+<br>Held sway in the ancient days,
+<br>I have never heard
+<br>
+<br>That water gleamed with autumn red
+<br>As it does in Tatta's stream
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br> | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom17"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc17"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng18"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna18.jpg">18</a></h3></center>
+<br><center>Fujiwara no Toshiyuki</center>
+<br>The waves are gathered
+<br>On the shore of Sumi Bay,
+<br>And in the gathered night,
+<br>
+<br>When in dreams I go to you,
+<br>I hide from people's eyes.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom18"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc18"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng19"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna19.jpg">19</a></h3></center>
+<br><center>Lady Ise</center>
+<br>Even for a time
+<br>Short as a piece of the reeds
+<br>In Naniwa's marsh,
+<br>
+<br>We must never meet again:
+<br>Is this what you are asking me?
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br> | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom19"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc19"
+target="euc">Japanese -></a>
+ | 
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng20"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna20.jpg">20</a></h3></center>
+<br><center>Prince Motoyoshi</center>
+<br>In this dire distress
+<br>My life is meaningless.
+<br>So we must meet now,
+<br>
+<br>Even though it costs my life
+<br>In the Bay of Naniwa.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom20"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc20"
+target="euc">Japanese -></a>
+ | 
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng21"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna21.jpg">21</a></h3></center>
+<br><center>The Monk Sosei</center>
+<br>Just because she said,
+<br>"In a moment I will come,"
+<br>I've awaited her
+<br>
+<br>Until the moon of daybreak,
+<br>In the long month, has appeared.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom21"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc21"
+target="euc">Japanese -></a>
+ | 
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng22"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna22.jpg">22</a></h3></center>
+<br><center>Fun'ya no Yasuhide</center>
+<br>It is by its breath
+<br>That autumn's leaves of trees and grass
+<br>Are wasted and driven.
+<br>
+<br>So they call this mountain wind
+<br>The wild one, the destroyer.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom22"
+target="rom"><- Romaji</a>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc22"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng23"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna23.jpg">23</a></h3></center>
+<br><center>Oe no Chisato</center>
+<br>As I view the moon,
+<br> Many things come into my mind,
+<br>And my thoughts are sad;
+<br>
+<br>Yet it's not for me alone,
+<br>That the autumn time has come.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom23"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc23"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng24"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna24.jpg">24</a></h3></center>
+<br><center>Sugawara no Michizane</center>
+<br>At the present time,
+<br>Since I could bring no offering,
+<br>See Mount Tamuke!
+<br>
+<br>Here are brocades of red leaves,
+<br>As a tribute to the gods.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom24"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc24"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng25"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna25.jpg">25</a></h3></center>
+<br><center>Fujiwara no Sadakata</center>
+<br>If your name is true,
+<br>Trailing vine of "Meeting Hill,"
+<br>Isn't there some way,
+<br>
+<br>Hidden from people's gaze,
+<br>That you can draw her to my side?
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom25"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc25"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng26"> </a>
+<center><h3><a
+href="http://et
+ext.lib.virgini
+a.edu/japanese/hyakunin/images/onna26.jpg">26</a></h3></center>
+<br><center>Fujiwara no Tadahira</center>
+<br>If the maple leaves
+<br>On Ogura mountain
+<br>Could only have hearts,
+<br>
+<br>They would longingly await
+<br>The emperor's pilgrimage.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom26"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc26"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng27"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna27.jpg">27</a></h3></center>
+<br><center>Fujiwara no Kanesuke</center>
+<br>Over Mika's plain,
+<br>Gushing forth and flowing free,
+<br>Is Izumi's stream.
+<br>
+<br>I do not know if we have met:
+<br>Why, then, do I long for her?
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom27"
+target="rom"><- Romaji</a>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc27"
+target="euc">Japanese -></a>
+ | 
+ </center>
+<hr width=50% size=4> <a names="eng28"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna28.jpg">28</a></h3></center>
+<br><center>Minamoto no Muneyuki</center>
+<br>Winter loneliness
+<br>In a mountain village grows
+<br>Only deeper, when
+<br>
+<br>Guests are gone, and leaves and grass
+<br>Are withered: troubling thoughts.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom28"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc28"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng29"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna29.jpg">29</a></h3></center>
+<br><center>Oshikochi no Mitsune</center>
+<br>If it were my wish
+<br>To pick the white chrysanthemums,
+<br>Puzzled by the frost
+<br>
+<br>Of the early autumn time,
+<br>I by chance might pluck the flower.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom29"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc29"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng30"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna30.jpg">30</a></h3></center>
+<br><center>Mibu no Tadamine</center>
+<br>Like the morning moon,
+<br>Cold, unpitying was my love.
+<br>And since we parted,
+<br>
+<br>I dislike nothing so much
+<br>As the breaking light of day.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom30"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc30"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng31"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna31.jpg">31</a></h3></center>
+<br><center>Sakanoue no Korenori</center>
+<br>At the break of day,
+<br>Just as though the morning moon
+<br>Lightened the dim scene,
+<br>
+<br>Yoshino's village lay
+<br>In a haze of falling snow.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom31"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc31"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng32"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna32.jpg">32</a></h3></center>
+<br><center>Harumichi no Tsuraki</center>
+<br>In a mountain stream
+<br>There is a wattled barrier
+<br>Built by the busy wind.
+<br>
+<br>Yet it's only maple leaves,
+<br>Powerless to flow away.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom32"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc32"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng33"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna33.jpg">33</a></h3></center>
+<br><center>Ki no Tomonori</center>
+<br>In the peaceful light
+<br>Of the ever-shining sun
+<br>In the days of spring,
+<br>
+<br>Why do the cherry's new-blown blooms
+<br>Scatter like restless thoughts?
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom33"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc33"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng34"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna34.jpg">34</a></h3></center>
+<br><center>Fujiwara no Okikaze</center>
+<br>Who is still alive
+<br>When I have grown so old
+<br>That I can call my friends?
+<br>
+<br>Even Takasago's pines
+<br>No longer offer comfort.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom34"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc34"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng35"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna35.jpg">35</a></h3></center>
+<br><center>Ki no Tsurayuki</center>
+<br>The depths of the hearts
+<br>Of humankind cannot be known.
+<br>But in my birthplace
+<br>
+<br>The plum blossoms smell the same
+<br>As in the years gone by.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom35"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc35"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng36"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna36.jpg">36</a></h3></center>
+<br><center>Kiyohara no Fukayabu</center>
+<br>In the summer night
+<br>The evening still seems present,
+<br>But the dawn is here.
+<br>
+<br>To what region of the clouds
+<br>Has the wandering moon come home?
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | <a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom36"
+target="rom"><- Romaji</a>
+ |
+ | <a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc36"
+target="euc">Japanese -></a>
+</center>
+<hr width=50% size=4> </lg><lg><a name="eng37"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna37.jpg">37</a></h3></center>
+<br><center>Bun'ya no Asayasu</center>
+<br>In the autumn fields
+<br>When the heedless wind blows by
+<br>Over the pure-white dew,
+<br>
+<br>How the myriad unstrung gems
+<br>Are scattered everywhere around
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom37"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc37"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng38"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna38.jpg">38</a></h3></center>
+<br><center>Lady Ukon</center>
+<br>Though he forsook me,
+<br>For myself I do not care:
+<br>He made a promise,
+<br>
+<br>And his life, who is forsworn,
+<br>Oh how pitiful that is.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom38"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc38"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng39"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna39.jpg">39</a></h3></center>
+<br><center>Minamoto no Hitoshi</center>
+<br>Bamboo growing
+<br>Among the tangled reeds
+<br>Like my hidden love:
+<br>
+<br>But it is too much to bear
+<br>That I still love her so.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom39"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc39"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng40"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna40.jpg">40</a></h3></center>
+<br><center>Taira no Kanemori</center>
+<br>Though I would hide it,
+<br>In my face it still appears--
+<br>My fond, secret love.
+<br>
+<br>And now he questions me:
+<br>"Is something bothering you?"
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom40"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc40"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng41"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna41.jpg">41</a></h3></center>
+<br><center>Mibu no Tadami</center>
+<br>It is true I love,
+<br>But the rumor of my love
+<br>Had gone far and wide,
+<br>
+<br>When people should not have known
+<br>That I had begun to love.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom41"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc41"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng42"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna42.jpg">42</a></h3></center>
+<br><center>Kiyohara no Motosuke</center>
+<br>Our sleeves were wet with tears
+<br>As pledges that our love--
+<br>Will last until
+<br>
+<br>Over Sue's Mount of Pines
+<br>Ocean waves are breaking.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom42"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc42"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng43"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna43.jpg">43</a></h3></center>
+<br><center>Fujiwara no Atsutada</center>
+<br>I have met my love.
+<br>When I compare this present
+<br>With feelings of the past,
+<br>
+<br>My passion is now as if
+<br>I have never loved before.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom43"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc43"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng44"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna44.jpg">44</a></h3></center>
+<br><center>Fujiwara no Asatada</center>
+<br>If it should happen
+<br>That we never met again,
+<br>I would not complain;
+<br>
+<br>And I doubt that she or I
+<br>Would feel that we were left alone.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | <a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom44"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc44"
+target="euc">Japanese -></a>
+ | </center>
+<hr width=50% size=4> </lg><lg><a name="eng45"> </a>
+<center><h3><a
+href="http://et
+ext.lib.virgini
+a.edu/japanese/hyakunin/images/onna45.jpg">45</a></h3></center>
+<br><center>Fujiwara no Koremasa</center>
+<br>Surely there is none
+<br>Who will speak a pitying word
+<br>About my lost love.
+<br>
+<br>Now my folly's fitting end
+<br>Is my own nothingness.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom45"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc45"
+target="euc">Japanese -></a>
+ | </center>
+<hr width=50% size=4> </lg><lg><a name="eng46"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna46.jpg">46</a></h3></center>
+<br><center>Sone no Yoshitada</center>
+<br>Like a mariner
+<br>Sailing over Yura's strait
+<br>With his rudder gone:
+<br>
+<br>Where, over the deep of love,
+<br>The end lies, I do not know.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |  
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom46"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc46"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng47"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna47.jpg">47</a></h3></center>
+<br><center>The Monk Egyo</center>
+<br>To the dim cottage
+<br>Overgrown with thick-leaved vines
+<br>In its loneliness
+<br>
+<br>Comes the dreary autumn time:
+<br>But there no people come.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom47"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc47"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng48"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna48.jpg">48</a></h3></center>
+<br><center>Minamoto no Shigeyuki</center>
+<br>Like a driven wave,
+<br>Dashed by fierce winds on a rock,
+<br>So am I:  alone
+<br>
+<br>And crushed upon the shore,
+<br>Remembering what has been.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom48"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc48"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng49"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna49.jpg">49</a></h3></center>
+<br><center> Onakatomi no Yoshinobu</center>
+<br>Like the guard's fires
+<br>Kept at the imperial gateway--
+<br>Burning through the night,
+<br>
+<br>Dull in ashes through the day--
+<br>Is the love aglow in me.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom49"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc49"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng50"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna50.jpg">50</a></h3></center>
+<br><center>Fujiwara no Yoshitaka</center>
+<br>For your precious sake,
+<br>Once my eager life itself
+<br>Was not dear to me.
+<br>
+<br>But now it is my heart's desire
+<br>It may long, long years endure.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom50"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc50"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng51"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna51.jpg">51</a></h3></center>
+<br><center>Fujiwara no Sanekata</center>
+<br>How can I tell her
+<br>How fierce my love for her is?
+<br>Will she understand
+<br>
+<br>That the love I feel for her
+<br>Burns like Ibuki's fire plant?
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom51"
+target="rom"><- Romaji</a>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc51"
+target="euc">Japanese -></a>
+ |  </center>
+<hr width=50% size=4> </lg><lg><a name="eng52"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna52.jpg">52</a></h3></center>
+<br><center>Fujiwara no Michinobu</center>
+<br>Though I know indeed
+<br>That the night will come again
+<br>After day has dawned,
+<br>
+<br>Still, in truth, I hate the sight
+<br>Of the morning's coming light.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom52"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc52"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng53"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna53.jpg">53</a></h3></center>
+<br><center>The Mother of Michitsuna</center>
+<br>Lying all alone,
+<br>Through the hours of the night,
+<br>Till the daylight comes:
+<br>
+<br>Can you realize at all
+<br>The emptiness of that night?
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |  
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom53"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc53"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng54"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna54.jpg">54</a></h3></center>
+<br><center>The Mother of Gido Sanshi</center>
+<br>If remembering me
+<br>Will for him in future years
+<br>Be too difficult,
+<br>
+<br>It would be well this very day
+<br>That I should end my life.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom54"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc54"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng55"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna55.jpg">55</a></h3></center>
+<br><center>Fujiwara no Kinto</center>
+<br>Though the waterfall
+<br>Ceased its flowing long ago,
+<br>And its sound is stilled,
+<br>
+<br>Yet, in name it ever flows,
+<br>And in fame may yet be heard.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom55"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc55"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng56"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna56.jpg">56</a></h3></center>
+<br><center>Lady Izumi Shikibu</center>
+<br>Soon my life will close.
+<br>When I am beyond this world
+<br>And have forgotten it,
+<br>
+<br>Let me remember only this:
+<br>One final meeting with you.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom56"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc56"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng57"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna57.jpg">57</a></h3></center>
+<br><center>Lady Murasaki Shikibu</center>
+<br>Meeting on the path:
+<br>But I cannot clearly know
+<br>If it was he,
+<br>
+<br>Because the midnight moon
+<br>In a cloud had disappeared.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom57"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc57"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng58"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna58.jpg">58</a></h3></center>
+<br><center>Daini no Sanmi, Lady Kataiko</center>
+<br>As Mount Arima
+<br>Sends its rustling winds across
+<br>Ina's bamboo plains,
+<br>
+<br>I will be just as steadfast
+<br>And never will forget you.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom58"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc58"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng59"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna59.jpg">59</a></h3></center>
+<br><center>Lady Akazome Emon</center>
+<br>Better to have slept
+<br>Care-free, than to keep vain watch
+<br>Through the passing night,
+<br>
+<br>Till I saw the lonely moon
+<br>Traverse her descending path.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom59"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc59"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng60"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna60.jpg">60</a></h3></center>
+<br><center>Lady Koshikibu</center>
+<br>By Oe Mountain
+<br>The road to Ikuno
+<br>Is far away,
+<br>
+<br>And neither have I beheld
+<br>Nor crossed its bridge of heaven.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom60"
+target="rom"><- Romaji</a>
+ | <a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc60"
+target="euc">Japanese -></a>
+ |</center>
+<hr width=50% size=4> </lg><lg><a name="eng61"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna61.jpg">61</a></h3></center>
+<br><center>Lady Ise no Osuke</center>
+<br>Eight-fold cherry flowers
+<br>That at Nara--ancient seat
+<br>Of our state--have bloomed,
+<br>
+<br>In our nine-fold palace court
+<br>Shed their sweet perfume today.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom61"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc61"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng62"> </a>
+<center><h3><a
+href="http://et
+ext.lib.virgini
+a.edu/japanese/hyakunin/images/onna62.jpg">62</a></h3></center>
+<br><center>Lady Sei Shonagon</center>
+<br>The rooster's crowing
+<br>In the middle of the night
+<br>Deceived the hearers;
+<br>
+<br>But at Osaka's gateway
+<br>The guards are never fooled.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom62"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc62"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng63"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna63.jpg">63</a></h3></center>
+<br><center>Fujiwara no Michimasa</center>
+<br>Is there any way
+<br>Except by a messenger
+<br>To send these words to you?
+<br>
+<br>If I could, I'd come to you
+<br>To say goodbye forever.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom63"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc63"
+target="euc">Japanese -></a>
+ | 
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng64"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna64.jpg">64</a></h3></center>
+<br><center>Fujiwara no Sadayori</center>
+<br>In the early dawn
+<br>When the mists on Uji River
+<br>Slowly lift and clear,
+<br>
+<br>From the shallows to the deep,
+<br>The stakes of fishing nets appear.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom64"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc64"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng65"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna65.jpg">65</a></h3></center>
+<br><center>Lady Sagami</center>
+<br>Even when your hate
+<br>Makes me stain my sleeves with tears
+<br>In cold misery,
+<br>
+<br>Worse than hate and misery
+<br>Is the loss of my good name.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom65"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc65"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng66"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna66.jpg">66</a></h3></center>
+<br><center>Abbot Gyoson</center>
+<br>On a mountain slope,
+<br>Solitary, uncompanioned,
+<br>Stands a cherry tree.
+<br>
+<br>Except for you, lonely friend,
+<br>To others I am unknown.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom66"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc66"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng67"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna67.jpg">67</a></h3></center>
+<br><center>Lady Suo</center>
+<br>If I lay my head
+<br>Upon his arm in the dark
+<br>Of a short spring night,
+<br>
+<br>This innocent dream pillow
+<br>Will be the death of my good name.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom67"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc67"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng68"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna68.jpg">68</a></h3></center>
+<br><center>Emperor Sanjo</center>
+<br>Though I do not want
+<br>To live on in this floating world,
+<br>If I remain here,
+<br>
+<br>Let me remember only
+<br>This midnight and this moonrise.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom68"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc68"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng69"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna69.jpg">69</a></h3></center>
+<br><center>The Monk Noin</center>
+<br>By the wind storm's blast
+<br>From Mimuro's mountain slopes
+<br>Maples leaves are torn,
+<br>
+<br>Which turn Tatsuta River
+<br>Into a rich brocade.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom69"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc69"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng70"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna70.jpg">70</a></h3></center>
+<br><center>The Monk Ryosen</center>
+<br>In my loneliness
+<br>I leave my little hut.
+<br>When I look around,
+<br>
+<br>Everywhere it is the same:
+<br>One lone, darkening autumn eve.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom70"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc70"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng71"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna71.jpg">71</a></h3></center>
+<br><center>Minamoto no Tsunenobu</center>
+<br>When the evening comes,
+<br>From the rice leaves at my gate,
+<br>Gentle knocks are heard,
+<br>
+<br>And, into my round rush-hut,
+<br>Enters autumn's roaming breeze.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom71"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc71"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng72"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna72.jpg">72</a></h3></center>
+<br><center>Lady Kii</center>
+<br>Famous are the waves
+<br>That break on Takashi beach
+<br>In noisy arrogance.
+<br>
+<br>If I should go near that shore.
+<br>I would only wet my sleeves.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom72"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc72"
+target="euc">Japanese -></a>
+ |
+</center>
+<hr width=50% size=4> </lg><lg><a name="eng73"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna73.jpg">73</a></h3></center>
+<br><center>Oe no Masafusa</center>
+<br>On that far mountain
+<br>On the slope below the peak
+<br>Cherries are in flower.
+<br>
+<br>Oh, let the mountain mists
+<br>Not arise to hide the scene.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |  
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom73"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc73"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng74"> </a>
+<center><h3><a
+href="http://et
+ext.lib.virginia.edu/japanese/hyakunin/images/onna74.jpg">74</a></h3></center>
+<br><center>Minamoto no Toshiyori</center>
+<br>It was not for this
+<br>I prayed at the holy shrine:
+<br>That she would become
+<br>
+<br>As pitiless and as cold
+<br>As the storms on Hase's hills.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | <a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom74"
+target="rom"><- Romaji</a>
+ | <a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc74"
+target="euc">Japanese -></a>
+ |
+</center>
+<hr width=50% size=4> </lg><lg><a name="eng75"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna75.jpg">75</a></h3></center>
+<br><center>Fujiwara no Mototoshi</center>
+<br>As dew promises
+<br>New life to the thirsty plant,
+<br>So did your vow to me.
+<br>
+<br>Yet the year has passed away,
+<br>And autumn has come again.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |  
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom75"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc75"
+target="euc">Japanese -></a>
+ | 
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng76"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna76.jpg">76</a></h3></center>
+<br><center>Fujiwara no Tadamichi</center>
+<br>Over the wide sea
+<br>As I sail and look around,
+<br>It appears to me
+<br>
+<br>That the white waves, far away,
+<br>Are the ever shining sky.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |  
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom76"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc76"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng77"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna77.jpg">77</a></h3></center>
+<br><center>Emperor Sutoku</center>
+<br>Though a swift stream is
+<br>Divided by a boulder
+<br>In its headlong flow,
+<br>
+<br>Though divided, on it rushes,
+<br>And at last unites again.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |  
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom77"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc77"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng78"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna78.jpg">78</a></h3></center>
+<br><center>Minamoto no Kanemasa</center>
+<br>Guard of Suma Gate,
+<br>From your sleep, how many nights
+<br>Have you awakened
+<br>
+<br>At the cries of sanderlings,
+<br>Flying from Awaji Island?
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom78 |
+</center>" target="rom"><- Romaji</a>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc78 |
+</center>" target="euc">Japanese -></a>
+ | 
+</center>
+<hr width=50% size=4> </lg><lg><a name="eng79"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna79.jpg">79</a></h3></center>
+<br><center>Fujiwara no Akisuke</center>
+<br>See how clear and bright
+<br>Is the moonlight finding ways
+<br>Through the riven clouds
+<br>
+<br>That, with drifting autumn wind,
+<br>Gracefully float in the sky.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom79"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc79"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng80"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna80.jpg">80</a></h3></center>
+<br><center>Lady Horikawa</center>
+<br>Is it forever
+<br>That he hopes our love will last?
+<br>He did not answer.
+<br>
+<br>And now my daylight thoughts
+<br>Are as tangled as my black hair.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom80"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc80"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng81"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna81.jpg">81</a></h3></center>
+<br><center>Fujiwara no Sanesada</center>
+<br>When I turned my look
+<br>Toward the place where I had heard
+<br>The cuckoo's call,
+<br>
+<br>The only thing I found
+<br>Was the moon of early dawn.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom81"
+target="rom"><- Romaji</a>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc81"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng82"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna82.jpg">82</a></h3></center>
+<br><center>The Monk Doin</center>
+<br>Though in deep distress
+<br>Through your cruel blow, my life
+<br>Still is left to me.
+<br>
+<br>But I cannot keep my tears;
+<br>They break forth from my grief.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom82"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc82"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng83"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna83.jpg">83</a></h3></center>
+<br><center>Fujiwara no Toshinari</center>
+<br>From this world I think
+<br>That there is nowhere to escape.
+<br>I wanted to hide
+<br>
+<br>In the mountains' farthest depths;
+<br>But there I hear the stag's cry.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom83"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc83"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng84"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna84.jpg">84</a></h3></center>
+<br><center>Fujiwara no Kiyosuke</center>
+<br>If I should live long,
+<br>Then perhaps the present days
+<br>May be dear to me,
+<br>
+<br>Just as past time filled with grief
+<br>Comes quietly back in thought.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom84"
+target="rom"><- Romaji</a> 
+ | <a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc84"
+target="euc">Japanese -></a>
+ |
+</center>
+<hr width=50% size=4> </lg><lg><a name="eng85"> </a>
+<center><h3><a
+href="http://et
+ext.lib.virgini
+a.edu/japanese/hyakunin/images/onna85.jpg">85</a></h3></center>
+<br><center>The Monk Shun'e</center>
+<br>Through an unsleeping night
+<br>Longingly I pass the hours,
+<br>While the day's dawn lags.
+<br>
+<br>And now the bedroom shutters
+<br>Are keeping light and life from me.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom85"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc85"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng86"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna86.jpg">86</a></h3></center>
+<br><center>The Monk Saigyo</center>
+<br>Should I blame the moon
+<br>For bringing forth this sadness,
+<br>As if it pictured grief?
+<br>
+<br>Lifting up my troubled face,
+<br>I regard it through my tears.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom86"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc86"
+target="euc">Japanese -></a>
+ | 
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng87"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna87.jpg">87</a></h3></center>
+<br><center>The Monk Jakuren</center>
+<br>An autumn eve:
+<br>See the valley mists arise
+<br>Among the fir leaves
+<br>
+<br>That still hold the dripping wet
+<br>Of the chill day's sudden showers.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom87"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc87"
+target="euc">Japanese -></a>
+ | 
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng88"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna88.jpg">88</a></h3></center>
+<br><center>Attendant to Empress Koka</center>
+<br>After one brief night--
+<br>Short as a piece of the reeds
+<br>Growing in Naniwa bay--
+<br>
+<br>Must I forever long for him
+<br>With my whole heart, till life ends?
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom88"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc88"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng89"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna89.jpg">89</a></h3></center>
+<br><center>Princess Shokushi</center>
+<br>Like a string of gems
+<br>Grown weak, my life will break now;
+<br>For if I live on,
+<br>
+<br>All I do to hide my love
+<br>May at last grow weak and fail.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom89"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc89"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng90"> </a>
+<center><h3><a
+href="http://et
+ext.lib.virginia.edu/japanese/hyakunin/images/onna90.jpg">90</a></h3></center>
+<br><center>Attendant to Empress Inpu</center>
+<br>Let me show him these!
+<br>Even the fishermen's sleeves
+<br>On Ojima's shores,
+<br>
+<br>Though wet through and wet again,
+<br>Do not so change their colors.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom90"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc90"
+target="euc">Japanese -></a>
+ |
+</center>
+<hr width=50% size=4> </lg><lg><a name="eng91"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna91.jpg">91</a></h3></center>
+<br><center>Fujiwara no Yoshitsune</center>
+<br>In my cold bed,
+<br>Drawing close my folded quilt,
+<br>I sleep alone,
+<br>
+<br>While all through the frosty night
+<br>I hear a cricket's lonely sound.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom91"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc91"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng92"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna92.jpg">92</a></h3></center>
+<br><center>Lady Sanuki</center>
+<br>Like a rock at sea,
+<br>At ebb-tide hidden from view,
+<br>Is my tear-drenched sleeve:
+<br>
+<br>Never for a moment dry,
+<br>And no one knows it is there.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom92"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc92"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng93"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna93.jpg">93</a></h3></center>
+<br><center>Minamoto no Sanetomo</center>
+<br>If only our world
+<br>Could be always as it is!
+<br>How moving the sight
+<br>
+<br>Of the little fishing boat
+<br>Drawn by ropes along the bank.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom93"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc93"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng94"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna94.jpg">94</a></h3></center>
+<br><center>Fujiwara no Masatsune</center>
+<br>From Mount Yoshino
+<br>Blows a chill, autumnal wind.
+<br>In the deepening night
+<br>
+<br>The ancient village shivers:
+<br>Sounds of beating cloth I hear.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom94"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc94"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng95"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna95.jpg">95</a></h3></center>
+<br><center>Abbot Jien</center>
+<br>From the monastery
+<br>On Mount Hiei I look out
+<br>On this world of tears,
+<br>
+<br>And though I am unworthy,
+<br>I shield it with my black sleeves.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom95"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc95"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng96"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna96.jpg">96</a></h3></center>
+<br><center>Fujiwara no Kintsune</center>
+<br>Not the snow of flowers,
+<br>That the hurrying wild wind whirls
+<br>Round the garden court:
+<br>
+<br>What withers and falls away
+<br>In this place is I myself.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom96"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc96"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng97"> </a>
+<center><h3><a
+href="http://et
+ext.lib.virgini
+a.edu/japanese/hyakunin/images/onna97.jpg">97</a></h3></center>
+<br><center>Fujiwara no Sadaie, Fujiwara no Teika</center>
+<br>Like the salt sea-weed,
+<br>Burning in the evening calm.
+<br>On Matsuo's shore,
+<br>
+<br>All my being is aflame,
+<br>Awaiting her who does not come.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom97"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc97"
+target="euc">Japanese -></a>
+ |
+ </center>
+<hr width=50% size=4> </lg><lg><a name="eng98"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna98.jpg">98</a></h3></center>
+<center>Fujiwara no Ietaka</center><br>
+<br>To Nara's brook comes
+<br>Evening, and the rustling winds
+<br>Stir the oak-trees' leaves.
+<br>
+<br>Not a sign of summer left
+<br>But the sacred bathing there.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom98"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc98"
+target="euc">Japanese -></a>
+ |
+</center>
+<hr width=50% size=4> </lg><lg><a name="eng99"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna99.jpg">99</a></h3></center>
+<center><br>Emperor Gotoba</center><br>
+<br>For some men I grieve;
+<br>Some men are hateful to me;
+<br>And this wretched world
+<br>
+<br>To me, with all my sadness,
+<br>Is a place of misery.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom99"
+target="rom"><- Romaji</a>
+ |
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc99"
+target="euc">Japanese -></a>
+ |
+</center>
+<hr width=50% size=4> </lg><lg><a name="eng100"> </a>
+<center><h3><a
+href="/japanese/hyakunin/images/onna100.jpg">100</a></h3></center>
+<center><br>Emperor Juntoku</center><br>
+<br>In this ancient house,
+<br>Paved with a hundred stones,
+<br>Ferns grow in the eaves;
+<br>
+<br>But numerous as they are,
+<br>My old memories are more.
+<br>
+<center><hr width=30% size=4><a
+href="/etcbin/hyakuframe2www?act=queryform&specfile=/web/data/japanese/hyakunin/frames/index/hyaku1eng.o2w"><font color="000080">Search</font></a>
+<br><br>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku2rom.html#rom100"
+target="rom"><- Romaji</a>
+ | 
+<a href="/japanese/hyakunin/frames/index/hyaku3euc.html#euc100"
+target="euc">Japanese -></a>
+</center>
+</lg>
+<script src="http://www.lib.virginia.edu/libtools.js" type="text/javascript"></script></body>
+</html>
