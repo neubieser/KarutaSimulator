@@ -14,9 +14,10 @@ from subprocess import call
 #I only have audio for 80/100
 
 scale = .14
-cards = [2,4,5,6,8,9,10,11,13,14,15,16,17,18,20,21,22,23,24,26,27,28,29,32,33,34,35,37,38,40,41,42,46,47,48\
-         ,49,50,51,54,55,57,59,61,62,63,65,66,67,68,70,71,73,74,75,76,77,81,83,85,87,89,90,91,92,93,94,96,97\
-         ,98,99,100,72,82,44,60,95,36,84,80,53,86]
+#cards = [2,4,5,6,8,9,10,11,13,14,15,16,17,18,20,21,22,23,24,26,27,28,29,32,33,34,35,37,38,40,41,42,46,47,48\
+#         ,49,50,51,54,55,57,59,61,62,63,65,66,67,68,70,71,73,74,75,76,77,81,83,85,87,89,90,91,92,93,94,96,97\
+#         ,98,99,100,72,82,44,60,95,36,84,80,53,86]
+cards = [i for i in range(1,101)]
 order = [(12,1),(1,1),(11,1),(2,1),(12,2),(11,2),(12,3),(1,2),(10,1),(3,1),(2,2),(10,2),(1,3),(11,3),\
          (2,3),(10,3),(9,1),(3,2),(9,2),(3,3),(4,1),(8,1),(7,1),(4,2),(4,3)]
 
@@ -63,6 +64,10 @@ class Karuta(Frame):
         
 
     def playNextAudio(self):
+        self.faultCount = 0
+        self.cheated = False
+        self.infoLabel.config(text='Now Playing')
+        self.startTime = time.time()
         if self.cardsLeft:
             randomCard = self.cardsLeft.pop()
             self.activeCard = randomCard
@@ -72,12 +77,17 @@ class Karuta(Frame):
             t= threading.Thread(target=doInBackground, args=())
             t.start()
     def reveal(self):
+        self.cheated = True
         if self.activeCard in self.p1:
+            self.infoLabel.config(text='p1 has it')
             print('p1 has it')
         elif self.activeCard in self.p2:
             print('p2 has it')
+            self.infoLabel.config(text='p2 has it')
         else:
             print('was karafuda')
+            self.infoLabel.config(text='karafuda')
+        self.update()
 
     def rerack(self):
         for row in range(6):
@@ -97,7 +107,7 @@ class Karuta(Frame):
                     self.model[row][col].image = self.model[row][col-1].image
                     self.model[row][col].config(image=self.model[row][col].image)
                     self.model[row][col].pack(fill=BOTH)
-        self.update_idletasks()
+        self.update()
 
 
 
@@ -123,20 +133,25 @@ class Karuta(Frame):
         def playNextAudio():
             self.playNextAudio()
         b = Button(self,text='Play',command=playNextAudio)
-        b.grid(row=0, column=12)
+        b.grid(row=0, column=9)
 
         def reveal():
             self.reveal()
 
         b = Button(self,text='Reveal',command=reveal)
-        b.grid(row=1, column=12)
+        b.grid(row=0, column=10)
 
         def rerack():
             self.rerack()
 
         b = Button(self,text='Rerack',command=rerack)
-        b.grid(row=2, column=12)
+        b.grid(row=0, column=11)
+
+        l = Label(self,text='')
+        l.grid(row=0, column=0, columnspan=5)
+        self.infoLabel = l
         self.pack()
+
                 
       
     def setCard(self,cardnum,row,col):
@@ -150,7 +165,7 @@ class Karuta(Frame):
             f.config(height = card.height+20)
         if col == 5:
             f.config(width = card.width+250)
-        f.grid(row=row, column=col)
+        f.grid(row=row+1, column=col)
         f.pack_propagate(0)
         self.fgrid[row][col] = f
         
@@ -164,8 +179,25 @@ class Karuta(Frame):
         
         def dostuff(pls,ins,card):
             if card.number == ins.activeCard:
+                endTime = time.time()
+                if not self.cheated:
+                    delta = round(endTime-self.startTime,2)
+                    print(delta)
+                    self.infoLabel.config(text="Got in "+str(delta))
+                else:
+                    self.infoLabel.config(text=str(self.faultCount)+" faults made")
                 pic.pack_forget()
                 ins.model[pic.row][pic.col].isNone = True
+            elif (card.number in ins.p1 and ins.activeCard in ins.p1) or \
+                 (card.number in ins.p2 and ins.activeCard in ins.p2):
+                pass
+            else:
+                self.cheated = True
+                self.faultCount = self.faultCount + 1
+                self.infoLabel.config(text=str(self.faultCount)+" faults made")
+
+
+
         
         pic.bind("<Button-1>",lambda e,pic=pic,self=self,card=card:dostuff(pic,self,card))
         pic.pack(fill=BOTH)
