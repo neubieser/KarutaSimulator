@@ -1,5 +1,5 @@
 Requirements:
-* Pillow
+* Pillow (installable via pip)
 
 
 Hey check out this fun Karuta stuff I have.
