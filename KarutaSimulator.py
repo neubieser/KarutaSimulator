@@ -110,6 +110,8 @@ class Karuta(Frame):
             if self.state == 'ready':
                 self.playNextAudio()
                 return True
+            elif self.state == 'taking':
+                return True
 
   
     def __init__(self, parent,multiplayer=False):
