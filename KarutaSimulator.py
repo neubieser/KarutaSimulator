@@ -186,7 +186,7 @@ class Karuta(Frame):
                 def playCurrentVerse2():
                     call(['afplay','Audio/Audio/Verse2'+str(previousCard)+'.mp3'])
 
-                t= threading.Thread(target=doInBackground, args=())
+                t= threading.Thread(target=playCurrentVerse2, args=())
                 t.start()
                 self.root.after(verse2Durations[previousCard],self.playNextVerse1)
 
