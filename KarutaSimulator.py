@@ -78,8 +78,8 @@ class Karuta(Frame):
     def process(self,message):
         info = message.split(',')
         if info[1] == 'took' and not info[1] == self.client.player:
-            timeTaken = float(info[1])
-            numFaults = info[2]
+            timeTaken = float(info[2])
+            numFaults = info[3]
             if timeTaken < time.time() - self.startTime and timeTaken < self.delta:
                 self.state = 'waiting'
                 text = "Opponent won the card. Faults: you="+str(self.faultCount)+", opp="+numFaults
@@ -115,8 +115,8 @@ class Karuta(Frame):
                 return True
             elif self.state == 'taking':
                 return True
-        elif info[0] == 'ghost' and not info[0] == self.client.player:
-            numFaults = info[1]
+        elif info[1] == 'ghost' and not info[0] == self.client.player:
+            numFaults = info[2]
             self.state == 'waiting'
             text = "Karufuda. Faults: you="+str(self.faultCount)+", opp="+numFaults
             self.infoLabel.config(text=text)
