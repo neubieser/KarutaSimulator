@@ -46,7 +46,6 @@ def assignCards(cards,order):
 
 class Card:
     def __init__(self, number):
-
         self.number = number
         img = Image.open('Images/'+str(number)+'.png')
         img = img.resize((int(625*scale), int(873*scale)),Image.ANTIALIAS)
@@ -141,6 +140,7 @@ class Karuta(Frame):
 
   
     def __init__(self, parent,multiplayer=False):
+        self.activeCard = 0
         self.startTime = -1
         self.client = KarutaClient("99.66.147.56", 3478)
         cards = self.client.cards
@@ -188,7 +188,7 @@ class Karuta(Frame):
 
                 t= threading.Thread(target=playCurrentVerse2, args=())
                 t.start()
-                self.root.after(verse2Durations[previousCard],self.playNextVerse1)
+                self.parent.after(verse2Durations[previousCard],self.playNextVerse1)
 
                 if self.activeCardRow == -1:
                     self.parent.after(10000,self.sendFouls)
