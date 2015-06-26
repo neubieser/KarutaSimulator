@@ -85,7 +85,7 @@ class Karuta(Frame):
             timeTaken = float(info[2])
             numFaults = info[3]
             if timeTaken < time.time() - self.startTime and timeTaken < self.delta:
-                self.state = 'waiting'
+                self.changeState('waiting')
                 text = "Opponent won the card. Faults: you="+str(self.faultCount)+", opp="+numFaults
                 self.client.sendMessage('took,'+str(self.delta)+','+str(self.faultCount))
                 self.infoLabel.config(text=text)
@@ -96,7 +96,7 @@ class Karuta(Frame):
             elif timeTaken > self.delta:
                 text = "You won the card. Faults: you="+str(self.faultCount)+", opp="+numFaults
                 self.infoLabel.config(text=text)
-                self.state = 'waiting'
+                self.changeState('waiting')
                 return True
             else:
                 return False
@@ -107,7 +107,7 @@ class Karuta(Frame):
                 self.update()
             return True
         elif info[1] == 'ready' and info[0] == self.client.player:
-            self.state = 'ready'
+            self.changeState('ready')
             if self.opponentReady:
                 self.infoLabel.config(text="Both players are ready.")
             else:
@@ -127,7 +127,7 @@ class Karuta(Frame):
             return True
         elif info[1] == 'ghost' and not info[0] == self.client.player:
             numFaults = info[2]
-            self.state = 'waiting'
+            self.changeState('waiting')
             text = "Karufuda. Faults: you="+str(self.faultCount)+", opp="+numFaults
             self.infoLabel.config(text=text)
             return True
@@ -148,7 +148,7 @@ class Karuta(Frame):
         self.opponentReady = False
         self.fgrid = [[None for col in range(NUM_COLS)] for row in range(6)]
         self.model = [[None for col in range(NUM_COLS)] for row in range(6)]
-        self.state = 'waiting' 
+        self.changeState('waiting') 
         self.faultCount = 0
         Frame.__init__(self, parent)   
         self.activeCard = 0
@@ -211,7 +211,7 @@ class Karuta(Frame):
     def sendFouls(self):
         self.client.sendMessage('ghost,'+str(self.faultCount))
     def playNextVerse1(self):
-        self.state = 'taking'
+        self.changeState('taking')
         def doPlay():
 
             call(['afplay','Audio/Verse1/Audio'+str(self.activeCard)+'.m4a'])
@@ -223,7 +223,7 @@ class Karuta(Frame):
             self.client.sendMessage('rerack,'+self.client.player)
     def performRerack(self,player):
         self.opponentReady = False
-        self.state = 'waiting'
+        self.changeState('waiting')
         print('reracking')
         if player == 'p1':
             rows = [3,4,5]
@@ -279,11 +279,11 @@ class Karuta(Frame):
 
         def move():
             if self.state == 'move-select-start' or self.state == 'move-select-stop':
-                self.state = 'waiting'
+                self.changeState('waiting')
                 self.moveButton.config(text='Move')
                 self.infoLabel.config(text='Move cancelled')
             elif self.state == 'waiting':
-                self.state = 'move-select-start'
+                self.changeState('move-select-start')
                 self.infoLabel.config(text='Select card to move')
                 self.moveButton.config(text='Cancel')
             self.update()
@@ -369,7 +369,7 @@ class Karuta(Frame):
                     print("Got in "+str(self.delta))
                     self.client.sendMessage('took,'+str(self.delta)+','+str(self.faultCount))
 
-                    self.state = 'waiting'
+                    self.changeState('waiting')
 
                     pic.pack_forget()
                     ins.model[pic.row][pic.col].isNone = True
@@ -432,7 +432,7 @@ class Karuta(Frame):
     def doSwap(self,pos1, pos2):
         self.opponentReady = False
         if self.state == 'ready':
-            self.state = 'waiting'
+            self.changeState('waiting')
             self.infoLabel.config(text="Reconfirm when ready.")
         row1,col1 = pos1
         row2,col2 = pos2
@@ -456,6 +456,20 @@ class Karuta(Frame):
         else:
             pic2.pack_forget()
         self.update()
+    def changeState(self,state):
+        self.state = state
+        if state == 'waiting':
+            self.playButton.config(state=DISABLED)
+            self.moveButton.config(state=NORMAL,text="Move")
+        elif state == 'ready':
+            self.playButton.config(state=NORMAL)
+            self.moveButton.config(state=DISABLED,text="Move")
+        elif state == 'move-select-start' or state == 'move-select-stop'
+            self.playButton.config(state=DISABLED)
+            self.moveButton.config(state=ACTIVE)
+        elif state == 'taking':
+            self.moveButton.config(state=DISABLED,text="Move")
+            self.playButton.config(state=NORMAL)
 
 
 
