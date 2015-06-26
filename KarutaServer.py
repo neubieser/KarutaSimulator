@@ -40,8 +40,10 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
 	    	elif ks.p2 is None:
 	    		ks.p2 = self
 	    	if ks.p1 is self:
+	    		print 'p1 connected'
         		self.request.sendall('p1,'+ks.cards)
         	elif ks.p2 is self:
+        		print 'p2 connected'
         		self.request.sendall('p2,'+ks.cards)
         else:
         	player = self.data[:2]

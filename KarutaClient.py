@@ -18,7 +18,7 @@ class KarutaClient:
 			self.cards = [int(i) for i in cards]
 			print 'connected as p1'
 			print self.cards
-		elif received == 'p2':
+		elif received[:2] == 'p2':
 			self.player = 'p2'
 			cards = received[3:].split(',')
 			self.cards = [int(i) for i in cards]
