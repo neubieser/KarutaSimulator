@@ -166,7 +166,6 @@ class Karuta(Frame):
         if self.state == 'ready' and self.opponentReady:
             self.delta = 100000
             self.opponentReady = False
-            self.state = 'taking'
             self.faultCount = 0
             self.cheated = False
             self.infoLabel.config(text='Now Playing')
@@ -184,7 +183,7 @@ class Karuta(Frame):
                             break
                 print(randomCard)
                 def playCurrentVerse2():
-                    call(['afplay','Audio/Audio/Verse2'+str(previousCard)+'.mp3'])
+                    call(['afplay','Audio/Verse2'+str(previousCard)+'.mp3'])
 
                 t= threading.Thread(target=playCurrentVerse2, args=())
                 t.start()
@@ -196,7 +195,7 @@ class Karuta(Frame):
         elif self.state == 'taking':
             randomCard = self.activeCard
             def doInBackground():
-                call(['afplay','Audio/Audio'+str(randomCard)+'.m4a'])
+                call(['afplay','Audio/Verse1/'+str(randomCard)+'.m4a'])
             t= threading.Thread(target=doInBackground, args=())
             t.start()
         else:
@@ -212,8 +211,10 @@ class Karuta(Frame):
     def sendFouls(self):
         self.client.sendMessage('ghost,'+str(self.faultCount))
     def playNextVerse1(self):
+        self.state = 'taking'
         def doPlay():
-            call(['afplay','Audio/Audio/Verse1'+str(self.activeCard)+'.m4a'])
+
+            call(['afplay','Audio/Verse1'+str(self.activeCard)+'.m4a'])
         t = threading.Thread(target=doPlay, args=())
         t.start()
 
