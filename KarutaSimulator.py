@@ -80,7 +80,7 @@ class Karuta(Frame):
         if info[0] == 'took':
             timeTaken = info[1]
             numFaults = info[2]
-            if timeTaken < time.time() - self.startTime() or timeTaken < self.delta:
+            if timeTaken < time.time() - self.startTime or timeTaken < self.delta:
                 self.state = 'waiting'
                 text = "Opponent won the card. Faults: you="+str(self.faultCount)+", opp="+numFaults
                 self.infoLabel.config(text=text)
@@ -319,6 +319,7 @@ class Karuta(Frame):
                         self.state = 'waiting'
                     else:
                         self.infoLabel.config(text=str(self.faultCount)+" faults made")
+                        self.state = 'waiting'
                     pic.pack_forget()
                     ins.model[pic.row][pic.col].isNone = True
                 elif self.activeCardRow == -1 or not (pic.row <= 2) == (self.activeCardRow <= 2):
