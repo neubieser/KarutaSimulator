@@ -14,5 +14,10 @@ How to play:
 
 Use python 2.7
 
+For multiplayer:
+* Edit the file server.config to where you will host your server
+* ./runServer to start it running
+* ./playMulti IP_ADDRESS PORT to play someone else on that server
+* For now, you have to restart the server every time you play a new game, or someone disconnects
 
 This is very much WIP

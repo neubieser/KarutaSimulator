@@ -91,7 +91,12 @@ class MyTCPServer(SocketServer.TCPServer):
 
 
 if __name__ == "__main__":
-    HOST, PORT = "192.168.1.88", 3478
+    with open('server.config','r') as f:
+	data = f.readlines()
+	HOST = data[0][:-1]
+	PORT = int(data[1])
+    print 'Running server on '+HOST+':'+str(PORT)
+    #HOST, PORT = "192.168.1.88", 3478
 
     # Create the server, binding to localhost on port 9999
     server = MyTCPServer((HOST, PORT), MyTCPHandler)
