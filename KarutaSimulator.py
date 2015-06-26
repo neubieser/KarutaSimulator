@@ -26,7 +26,7 @@ cards = [i for i in range(1,101)]
 order = [(NUM_COLS,1),(1,1),(NUM_COLS-1,1),(2,1),(NUM_COLS,2),(NUM_COLS-1,2),(NUM_COLS,3),(1,2),(NUM_COLS-2,1),(3,1),(2,2),(NUM_COLS-2,2),(1,3),(NUM_COLS-1,3),\
          (2,3),(NUM_COLS-2,3),(NUM_COLS-3,1),(3,2),(NUM_COLS-3,2),(3,3),(4,1),(NUM_COLS-4,1),(NUM_COLS-5,1),(4,2),(4,3)]
 
-def randomAssignCards(cards,order):
+def assignCards(cards,order):
     cpy = cards[:]
     ass1 = {}
     ass2 = {}
@@ -122,8 +122,7 @@ class Karuta(Frame):
         Frame.__init__(self, parent)   
         self.activeCard = 0
         self.parent = parent
-        self.cardsLeft = [i for i in range(1,101)]
-        random.shuffle(self.cardsLeft)
+        self.cardsLeft = self.client.order
         self.initUI(cards)
         if multiplayer:
             self.client.next = 0
@@ -215,7 +214,7 @@ class Karuta(Frame):
         
         Style().configure("TButton")
         
-        p1,p2 = randomAssignCards(cards,order)
+        p1,p2 = assignCards(cards,order)
         for row in range(6):
             for col in range(NUM_COLS):
                 if (NUM_COLS-col,row+1) in p1:

@@ -15,13 +15,17 @@ class KarutaClient:
 		if received[:2] == 'p1':
 			self.player = 'p1'
 			cards = received[3:].split(',')
-			self.cards = [int(i) for i in cards]
+			orders = [int(i) for i in cards]
+			self.cards = orders[:100]
+			self.order = orders[100:]
 			print 'connected as p1'
 			print self.cards
 		elif received[:2] == 'p2':
 			self.player = 'p2'
 			cards = received[3:].split(',')
-			self.cards = [int(i) for i in cards]
+			orders = [int(i) for i in cards]
+			self.cards = orders[:100]
+			self.order = orders[100:]
 			print 'connected as p2'
 			print self.cards
 		else:

@@ -12,8 +12,12 @@ class KarutaServerState():
 		mystr = ''
 		for i in cards:
 			mystr = mystr + str(i)+','
-		mystr = mystr[:-1]
-		self.cards = mystr
+		random.shuffle(cards)
+		readingOrder = ''
+		for i in cards:
+			readingOrder = readingOrder + str(i)+','
+		readingOrder = readingOrder[:-1]
+		self.cards = mystr + readingOrder
 		self.p1 = None
 		self.p2 = None
 		
