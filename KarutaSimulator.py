@@ -188,7 +188,7 @@ class Karuta(Frame):
             self.infoLabel.config(text='Row,Col = ('+str(self.activeCardRow)+','+str(self.activeCardCol)+')')
         self.update()
     def sendFouls(self):
-        self.client.sendMessage('ghost,'+self.numFaults)
+        self.client.sendMessage('ghost,'+self.faultCount)
 
 
     def rerack(self):
