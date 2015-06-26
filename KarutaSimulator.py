@@ -103,12 +103,14 @@ class Karuta(Frame):
         elif info[1] == 'ready' and not info[0] == self.client.player:
             self.opponentReady = True
             if self.state == 'ready':
+                self.playButton.config(state=NORMAL)
                 self.infoLabel.config(text="Both players are ready.")
                 self.update()
             return True
         elif info[1] == 'ready' and info[0] == self.client.player:
             self.changeState('ready')
             if self.opponentReady:
+                self.playButton.config(state=NORMAL)
                 self.infoLabel.config(text="Both players are ready.")
             else:
                 self.infoLabel.config(text="Waiting for opponent.")
@@ -310,6 +312,7 @@ class Karuta(Frame):
 
         def rerack():
             self.rerack()
+        self.rerackButton = b
 
         b = Button(self,text='Rerack',command=rerack)
         b.grid(row=0, column=11)
@@ -461,15 +464,20 @@ class Karuta(Frame):
     def changeState(self,state):
         self.state = state
         if state == 'waiting':
+            self.rerackButton.config(state=NORMAL)
+
             self.playButton.config(state=DISABLED)
             self.moveButton.config(state=NORMAL,text="Move")
         elif state == 'ready':
+            self.rerackButton.config(state=DISABLED)
             self.playButton.config(state=NORMAL)
             self.moveButton.config(state=DISABLED,text="Move")
         elif state == 'move-select-start' or state == 'move-select-stop':
             self.playButton.config(state=DISABLED)
             self.moveButton.config(state=ACTIVE)
         elif state == 'taking':
+            self.rerackButton.config(state=DISABLED)
+
             self.moveButton.config(state=DISABLED,text="Move")
             self.playButton.config(state=NORMAL)
 
