@@ -80,7 +80,7 @@ class Karuta(Frame):
         if info[0] == 'took':
             timeTaken = float(info[1])
             numFaults = info[2]
-            if timeTaken < time.time() - self.startTime or timeTaken < self.delta:
+            if timeTaken < time.time() - self.startTime and timeTaken < self.delta:
                 self.state = 'waiting'
                 text = "Opponent won the card. Faults: you="+str(self.faultCount)+", opp="+numFaults
                 self.client.sendMessage('took,'+str(self.delta)+','+str(self.faultCount))
