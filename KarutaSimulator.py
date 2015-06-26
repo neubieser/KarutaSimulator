@@ -109,7 +109,7 @@ class Karuta(Frame):
         elif info[0] == 'rerack':
             self.performRerack(info[1])
             return True
-        elif info[0] == 'play':
+        elif info[1] == 'play':
             if self.state == 'ready' and self.opponentReady:
                 self.playNextAudio()
                 return True
