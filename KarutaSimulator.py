@@ -104,6 +104,10 @@ class Karuta(Frame):
         elif info[0] == 'rerack':
             self.performRerack()
             return True
+        elif info[0] == 'play':
+            if self.state == 'ready':
+                self.playNextAudio()
+                return True
 
   
     def __init__(self, parent,multiplayer=False):
@@ -130,6 +134,8 @@ class Karuta(Frame):
 
     def playNextAudio(self):
         if self.state == 'ready' and self.opponentReady:
+            self.opponentReady = False
+            self.client.sendMessage("play")
             self.state = 'taking'
             self.faultCount = 0
             self.cheated = False
