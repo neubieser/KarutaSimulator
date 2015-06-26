@@ -397,7 +397,8 @@ class Karuta(Frame):
 
     def doSwap(self,pos1, pos2):
         self.opponentReady = False
-        self.state = 'waiting'
+        if self.state == 'ready':
+            self.state = 'waiting'
         row1,col1 = pos1
         row2,col2 = pos2
         pic1 = self.model[row1][col1]
