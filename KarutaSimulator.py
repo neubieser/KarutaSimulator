@@ -353,11 +353,16 @@ class Karuta(Frame):
                     self.faultCount = 1
                     self.infoLabel.config(text=str(self.faultCount)+" faults made")
             elif ins.state == 'move-select-start':
-                ins.state = 'move-select-stop'
                 ins.movingPic = (pic.row, pic.col)
                 print('moving card:')
                 print(ins.movingPic)
-                ins.infoLabel.config(text="Card chosen. Select Destination")
+                if ((self.client.player == 'p1' and pic.row > 2) or (self.client.player == 'p2' and pic.row <= 2))\
+                    and not pic.isNone:
+                    ins.infoLabel.config(text="Card chosen. Select Destination")
+                    ins.state = 'move-select-stop'
+
+                else:
+                    ins.infoLabel.config(text="Can't move that")
             elif ins.state == 'move-select-stop':
                 print('to:')
                 print((pic.row, pic.col))
