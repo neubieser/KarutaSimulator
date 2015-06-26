@@ -112,6 +112,12 @@ class Karuta(Frame):
                 return True
             elif self.state == 'taking':
                 return True
+        elif info[0] == 'ghost':
+            numFaults = info[1]
+            self.state == 'waiting'
+            text = "Karufuda. Faults: you="+str(self.faultCount)+", opp="+numFaults
+            self.infoLabel.config(text=text)
+
 
   
     def __init__(self, parent,multiplayer=False):
@@ -161,6 +167,10 @@ class Karuta(Frame):
                     call(['afplay','Audio/Audio'+str(randomCard)+'.m4a'])
                 t= threading.Thread(target=doInBackground, args=())
                 t.start()
+
+                if self.activeCardRow == -1:
+                    self.parent.after(10000,self.sendFouls)
+
         elif self.state == 'taking':
             randomCard = self.activeCard
             def doInBackground():
@@ -177,6 +187,8 @@ class Karuta(Frame):
         else:
             self.infoLabel.config(text='Row,Col = ('+str(self.activeCardRow)+','+str(self.activeCardCol)+')')
         self.update()
+    def sendFouls(self):
+        self.client.sendMessage('ghost,'+self.numFaults)
 
 
     def rerack(self):
@@ -265,7 +277,7 @@ class Karuta(Frame):
         b.grid(row=0, column=11)
 
         def ready():
-            if self.startTime < time.time() - 15:
+            if self.startTime < time.time() - 11:
                 if self.state == 'taking' and not self.activeCardRow == -1:
                     self.infoLabel.config(text="Card has not been found yet.")
                     self.update()
@@ -366,13 +378,13 @@ class Karuta(Frame):
     def swapCards(self,pos1, pos2):
         row1,col1 = pos1
         row2,col2 = pos2
-        if (self.client.player == 'p1' and row1 <=2 and row2 <=2) or\
-            (self.client.player == 'p2' and row1 > 2 and row2 > 2):
+        if (self.client.player == 'p2' and row1 <=2 and row2 <=2) or\
+            (self.client.player == 'p1' and row1 > 2 and row2 > 2):
 
             self.client.sendMessage('swap,'+str(row1)+','+str(col1)+','+str(row2)+','+str(col2))
-        elif (self.client.player == 'p1' and row1 <= 2 and row2 > 2 \
+        elif (self.client.player == 'p2' and row1 <= 2 and row2 > 2 \
             and not self.model[row1][col1].isNone and self.model[row2][col2].isNone) or \
-            (self.client.player == 'p2' and row1 > 2 and row2 <= 2 \
+            (self.client.player == 'p1' and row1 > 2 and row2 <= 2 \
             and not self.model[row1][col1].isNone and self.model[row2][col2].isNone):
             self.client.sendMessage('swap,'+str(row1)+','+str(col1)+','+str(row2)+','+str(col2))
 
