@@ -148,13 +148,14 @@ class Karuta(Frame):
         self.opponentReady = False
         self.fgrid = [[None for col in range(NUM_COLS)] for row in range(6)]
         self.model = [[None for col in range(NUM_COLS)] for row in range(6)]
-        self.changeState('waiting') 
         self.faultCount = 0
         Frame.__init__(self, parent)   
         self.activeCard = 0
         self.parent = parent
         self.cardsLeft = self.client.order
         self.initUI(cards)
+        self.changeState('waiting') 
+
         if multiplayer:
             self.client.next = 0
             self.client.nextMove = 0
