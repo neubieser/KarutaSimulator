@@ -298,6 +298,7 @@ class Karuta(Frame):
             else:
                 self.client.sendMessage('play')
         b = Button(self,text='Play',command=playNextAudio)
+        self.playButton = b
         b.grid(row=0, column=9)
 
         def reveal():
