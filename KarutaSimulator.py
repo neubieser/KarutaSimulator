@@ -118,9 +118,7 @@ class Karuta(Frame):
         elif info[1] == 'play':
             if self.state == 'ready' and self.opponentReady:
                 self.playNextAudio()
-                return True
-            elif self.state == 'taking':
-                return True
+            return True
         elif info[1] == 'ghost' and not info[0] == self.client.player:
             numFaults = info[2]
             self.state == 'waiting'
@@ -128,6 +126,9 @@ class Karuta(Frame):
             self.infoLabel.config(text=text)
             return True
         elif info[0] == self.client.player:
+            return True
+        else:
+            print(message)
             return True
 
 
@@ -299,12 +300,7 @@ class Karuta(Frame):
                     self.infoLabel.config(text="Card has not been found yet.")
                     self.update()
                 else:
-                    if self.opponentReady:
-                        self.infoLabel.config(text="Both players are ready.")
-                    else:
-                        self.infoLabel.config(text="Waiting for opponent")
                     self.moveButton.config(text="Move")
-                    self.state = 'ready'
                     self.client.sendMessage('ready')
                     self.update()
 
