@@ -121,6 +121,8 @@ class Karuta(Frame):
             text = "Karufuda. Faults: you="+str(self.faultCount)+", opp="+numFaults
             self.infoLabel.config(text=text)
             return True
+        elif info[0] == self.client.player:
+            return True
 
 
   
