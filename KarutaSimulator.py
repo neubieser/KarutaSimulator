@@ -98,6 +98,8 @@ class Karuta(Frame):
                 return False
         elif info[1] == 'ready' and not info[0] == self.client.player:
             self.opponentReady = True
+            if self.state == 'ready':
+                self.infoLabel.config(text="Both players are ready.")
             return True
         elif info[0] == 'swap':
             arr = [int(k) for k in info[1:]]
@@ -288,7 +290,10 @@ class Karuta(Frame):
                     self.infoLabel.config(text="Card has not been found yet.")
                     self.update()
                 else:
-                    self.infoLabel.config(text="Ready.")
+                    if self.opponentReady:
+                        self.infoLabel.config(text="Both players are ready.")
+                    else:
+                        self.infoLabel.config(text="Waiting for opponent")
                     self.moveButton.config(text="Move")
                     self.state = 'ready'
                     self.client.sendMessage('ready')
