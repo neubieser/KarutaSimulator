@@ -264,14 +264,15 @@ class Karuta(Frame):
         b.grid(row=0, column=11)
 
         def ready():
-            if self.state == 'taking' and not self.activeCardRow == -1:
-                self.infoLabel.config(text="Card has not been found yet.")
-                self.update()
-            else:
-                self.infoLabel.config(text="Ready.")
-                self.state = 'ready'
-                self.client.sendMessage('ready')
-                self.update()
+            if self.startTime > time.time() + 15
+                if self.state == 'taking' and not self.activeCardRow == -1:
+                    self.infoLabel.config(text="Card has not been found yet.")
+                    self.update()
+                else:
+                    self.infoLabel.config(text="Ready.")
+                    self.state = 'ready'
+                    self.client.sendMessage('ready')
+                    self.update()
 
         b = Button(self,text='Ready',command=ready)
         b.grid(row=0, column=12)
@@ -362,10 +363,18 @@ class Karuta(Frame):
             self.model[row][col].isNone = False
 
     def swapCards(self,pos1, pos2):
-
-        row1,col1 = pos1
-        row2,col2 = pos2
-        self.client.sendMessage('swap,'+str(row1)+','+str(col1)+','+str(row2)+','+str(col2))
+        if (self.client.player == 'p1' and row1 <=2 and row2 <=2) or\
+            (self.client.player == 'p2' and row1 > 2 and row2 > 2):
+            row1,col1 = pos1
+            row2,col2 = pos2
+            self.client.sendMessage('swap,'+str(row1)+','+str(col1)+','+str(row2)+','+str(col2))
+        elif (self.client.player == 'p1' and row1 <= 2 and row2 > 2 \
+            and not self.model[row1][col1].isNone and self.model[row2][col2].isNone) or \
+            (self.client.player == 'p2' and row1 > 2 and row2 <= 2 \
+            and not self.model[row1][col1].isNone and self.model[row2][col2].isNone):
+            row1,col1 = pos1
+            row2,col2 = pos2
+            self.client.sendMessage('swap,'+str(row1)+','+str(col1)+','+str(row2)+','+str(col2))
 
     def doSwap(self,pos1, pos2):
         row1,col1 = pos1
