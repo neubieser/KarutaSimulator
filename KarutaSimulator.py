@@ -77,7 +77,7 @@ class Karuta(Frame):
 
     def process(self,message):
         info = message.split(',')
-        if info[0] == 'take':
+        if info[0] == 'took':
             timeTaken = info[1]
             numFaults = info[2]
             if timeTaken < time.time() - self.startTime() or timeTaken < self.delta:
