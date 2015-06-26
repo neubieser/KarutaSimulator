@@ -188,7 +188,7 @@ class Karuta(Frame):
             self.infoLabel.config(text='Row,Col = ('+str(self.activeCardRow)+','+str(self.activeCardCol)+')')
         self.update()
     def sendFouls(self):
-        self.client.sendMessage('ghost,'+self.faultCount)
+        self.client.sendMessage('ghost,'+str(self.faultCount))
 
 
     def rerack(self):
@@ -283,6 +283,7 @@ class Karuta(Frame):
                     self.update()
                 else:
                     self.infoLabel.config(text="Ready.")
+                    self.moveButton.config(text="Move")
                     self.state = 'ready'
                     self.client.sendMessage('ready')
                     self.update()
