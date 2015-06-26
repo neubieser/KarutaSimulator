@@ -83,14 +83,17 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
     		self.request.sendall('success')
 
 
-
+class MyTCPServer(SocketServer.TCPServer):
+    def server_bind(self):
+        self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        self.socket.bind(self.server_address)
 
 
 if __name__ == "__main__":
     HOST, PORT = "192.168.1.88", 3478
 
     # Create the server, binding to localhost on port 9999
-    server = SocketServer.TCPServer((HOST, PORT), MyTCPHandler)
+    server = MyTCPServer((HOST, PORT), MyTCPHandler)
 
     # Activate the server; this will keep running until you
     # interrupt the program with Ctrl-C

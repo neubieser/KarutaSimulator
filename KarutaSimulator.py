@@ -344,22 +344,17 @@ class Karuta(Frame):
             if ins.state == 'taking' and not pic.isNone:
                 if card.number == ins.activeCard:
                     endTime = time.time()
-                    if not self.cheated:
-                        self.delta = round(endTime-self.startTime,2)
-                        print(self.delta)
-                        self.infoLabel.config(text="Got in "+str(self.delta))
-                        self.client.sendMessage('took,'+str(self.delta)+','+str(self.faultCount))
+                    self.delta = round(endTime-self.startTime,2)
+                    print(self.delta)
+                    print("Got in "+str(self.delta))
+                    self.client.sendMessage('took,'+str(self.delta)+','+str(self.faultCount))
 
-                        self.state = 'waiting'
-                    else:
-                        self.infoLabel.config(text=str(self.faultCount)+" faults made")
-                        self.state = 'waiting'
+                    self.state = 'waiting'
+
                     pic.pack_forget()
                     ins.model[pic.row][pic.col].isNone = True
                 elif self.activeCardRow == -1 or not (pic.row <= 2) == (self.activeCardRow <= 2):
-                    self.cheated = True
                     self.faultCount = 1
-                    self.infoLabel.config(text=str(self.faultCount)+" faults made")
             elif ins.state == 'move-select-start':
                 ins.movingPic = (pic.row, pic.col)
                 print('moving card:')
