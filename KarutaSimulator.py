@@ -161,6 +161,7 @@ class Karuta(Frame):
         self.fgrid = [[None for col in range(NUM_COLS)] for row in range(6)]
         self.model = [[None for col in range(NUM_COLS)] for row in range(6)]
         self.faultCount = 0
+        self.faults = [0,0]
         Frame.__init__(self, parent)   
         self.parent = parent
         self.initUI(cards)
@@ -184,9 +185,11 @@ class Karuta(Frame):
             if self.multiplayer:
                 self.opponentReady = False
             self.faultCount = 0
-            self.cheated = False
+            self.faults = [0,0]
             self.infoLabel.config(text='Now Playing')
             if self.cardsLeft:
+                self.changeState('taking')
+
                 previousCard = self.activeCard
                 randomCard = self.cardsLeft.pop()
                 self.activeCard = randomCard
@@ -203,10 +206,10 @@ class Karuta(Frame):
 
                 t= threading.Thread(target=playCurrentVerse2, args=())
                 t.start()
-                self.parent.after(verse2Durations[previousCard],self.playNextVerse1)
-
+                self.parent.after(verse2Durations[previousCard]+1000,self.playNextVerse1)
+                self.startTime = time.time() + verse2Durations[previousCard]+1000 #estimate
                 if self.activeCardRow == -1:
-                    self.parent.after(10000+verse2Durations[previousCard],self.sendFouls)
+                    self.parent.after(11000+verse2Durations[previousCard],self.sendFouls)
 
         elif self.state == 'taking':
             randomCard = self.activeCard
@@ -218,7 +221,6 @@ class Karuta(Frame):
             self.infoLabel.config(text='Not everyone is ready yet')
 
     def reveal(self):
-        self.cheated = True
         if self.activeCardRow == -1:
             self.infoLabel.config(text='karafuda')
         else:
@@ -230,7 +232,6 @@ class Karuta(Frame):
             self.client.oppSendMessage('p2,ghost,0')
     def playNextVerse1(self):
         self.startTime = time.time()
-        self.changeState('taking')
         def doPlay():
 
             call(['afplay','Audio/Verse1/Audio'+str(self.activeCard)+'.m4a'])
@@ -330,7 +331,8 @@ class Karuta(Frame):
         b = Button(self,text='Reveal',command=reveal)
         b.grid(row=0, column=10)
         self.revealButton = b
-        b.config(state=DISABLED)
+        if self.multiplayer:
+            b.config(state=DISABLED)
 
         def rerack():
             self.rerack()
@@ -352,6 +354,7 @@ class Karuta(Frame):
 
         b = Button(self,text='Ready',command=ready)
         b.grid(row=0, column=12)
+        self.readyButton = b
 
         l = Label(self,text='')
         l.grid(row=0, column=0, columnspan=5)
@@ -403,7 +406,8 @@ class Karuta(Frame):
                     pic.pack_forget()
                     ins.model[pic.row][pic.col].isNone = True
                 elif ins.activeCardRow == -1 or not (pic.row <= 2) == (ins.activeCardRow <= 2):
-                    ins.faultCount = 1
+                    ins.faults[int(pic.row <= 2)] = 1
+                    ins.faultCount = sum(ins.faults)
             elif ins.state == 'move-select-start':
                 ins.movingPic = (pic.row, pic.col)
                 print('moving card:')
@@ -489,11 +493,13 @@ class Karuta(Frame):
     def changeState(self,state):
         self.state = state
         if state == 'waiting':
+            self.readyButton.config(state=NORMAL)
             self.rerackButton.config(state=NORMAL)
 
             self.playButton.config(state=DISABLED)
             self.moveButton.config(state=NORMAL,text="Move")
         elif state == 'ready':
+            self.readyButton.config(state=ACTIVE)
             self.rerackButton.config(state=DISABLED)
             #self.playButton.config(state=NORMAL) #only activate when both players are ready
             self.moveButton.config(state=DISABLED,text="Move")
@@ -502,7 +508,7 @@ class Karuta(Frame):
             self.moveButton.config(state=ACTIVE)
         elif state == 'taking':
             self.rerackButton.config(state=DISABLED)
-
+            self.readyButton.config(state=DISABLED)
             self.moveButton.config(state=DISABLED,text="Move")
             self.playButton.config(state=NORMAL)
 
