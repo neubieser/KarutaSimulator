@@ -186,7 +186,6 @@ class Karuta(Frame):
             self.faultCount = 0
             self.cheated = False
             self.infoLabel.config(text='Now Playing')
-            self.startTime = time.time()
             if self.cardsLeft:
                 previousCard = self.activeCard
                 randomCard = self.cardsLeft.pop()
@@ -230,6 +229,7 @@ class Karuta(Frame):
         if not self.multiplayer:
             self.client.oppSendMessage('p2,ghost,0')
     def playNextVerse1(self):
+        self.startTime = time.time()
         self.changeState('taking')
         def doPlay():
 
