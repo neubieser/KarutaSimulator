@@ -1,12 +1,16 @@
 from __future__ import print_function
-from Tkinter import Tk, W, E, BOTH
+from Tkinter import Tk, W, E, BOTH, NORMAL, ACTIVE, DISABLED
 from ttk import Frame, Button, Label, Style
 from ttk import Entry
 from PIL import ImageTk, Image
 import threading
 import random
 import time
+import sys
 from subprocess import call
+from collections import deque
+from KarutaSingleClient import KarutaSingleClient
+from KarutaClient import KarutaClient
 
 #p1 is on top
 #p2 is on bottom
@@ -22,10 +26,13 @@ scale = .14
 cards = [i for i in range(1,101)]
 order = [(NUM_COLS,1),(1,1),(NUM_COLS-1,1),(2,1),(NUM_COLS,2),(NUM_COLS-1,2),(NUM_COLS,3),(1,2),(NUM_COLS-2,1),(3,1),(2,2),(NUM_COLS-2,2),(1,3),(NUM_COLS-1,3),\
          (2,3),(NUM_COLS-2,3),(NUM_COLS-3,1),(3,2),(NUM_COLS-3,2),(3,3),(4,1),(NUM_COLS-4,1),(NUM_COLS-5,1),(4,2),(4,3)]
+with open('Audio/Verse2/durations.txt','r') as f:
+    durations = f.readlines()
+    verse2Durations = [int(1000*float(i)) for i in durations]
 
-def randomAssignCards(cards,order):
+
+def assignCards(cards,order):
     cpy = cards[:]
-    random.shuffle(cpy)
     ass1 = {}
     ass2 = {}
     p1 = cpy[:len(cpy)/2]
@@ -40,7 +47,6 @@ def randomAssignCards(cards,order):
 
 class Card:
     def __init__(self, number):
-
         self.number = number
         img = Image.open('Images/'+str(number)+'.png')
         img = img.resize((int(625*scale), int(873*scale)),Image.ANTIALIAS)
@@ -53,28 +59,136 @@ class Card:
 
 
 class Karuta(Frame):
+
+    def pollForUpdates(self):
+        #response = self.client.sendMessage('get,'+str(self.client.next))
+        responseMove = self.client.sendMessage('getmove,'+str(self.client.nextMove))
+        #if not response == '':
+            #self.client.next = self.client.next + 1
+            #self.queue.append(response)
+        if not responseMove == '':
+            self.client.nextMove = self.client.nextMove + 1
+            self.queue.append(responseMove)
+        self.parent.after(200,self.pollForUpdates)
+
+    def processUpdates(self):
+        if not len(self.queue) == 0:
+            item = self.queue[0]
+            success = self.process(item)
+            if success:
+                self.queue.popleft()
+        self.parent.after(200,self.processUpdates)
+
+    def process(self,message):
+        info = message.split(',')
+        print(message)
+        if info[1] == 'took' and not info[0] == self.client.player:
+            timeTaken = float(info[2])
+            numFaults = info[3]
+            if timeTaken < time.time() - self.startTime and timeTaken < self.delta:
+                self.changeState('waiting')
+                text = "Opponent won the card. Faults: you="+str(self.faultCount)+", opp="+numFaults
+                self.client.sendMessage('took,'+str(self.delta)+','+str(self.faultCount))
+                self.infoLabel.config(text=text)
+                pic = self.model[self.activeCardRow][self.activeCardCol]
+                pic.pack_forget()
+                pic.isNone = True
+                return True
+            elif timeTaken > self.delta:
+                text = "You won the card. Faults: you="+str(self.faultCount)+", opp="+numFaults
+                self.infoLabel.config(text=text)
+                self.changeState('waiting')
+                return True
+            else:
+                return False
+        elif info[1] == 'ready' and not info[0] == self.client.player:
+            self.opponentReady = True
+            if self.state == 'ready':
+                self.playButton.config(state=NORMAL)
+                self.infoLabel.config(text="Both players are ready.")
+                self.update()
+            return True
+        elif info[1] == 'ready' and info[0] == self.client.player:
+            self.changeState('ready')
+            if self.opponentReady:
+                self.playButton.config(state=NORMAL)
+                self.infoLabel.config(text="Both players are ready.")
+            else:
+                self.infoLabel.config(text="Waiting for opponent.")
+            self.update()
+            return True
+        elif info[0] == 'swap':
+            arr = [int(k) for k in info[1:]]
+            self.doSwap((arr[0],arr[1]),(arr[2],arr[3]))
+            return True
+        elif info[0] == 'rerack':
+            self.performRerack(info[1])
+            return True
+        elif info[1] == 'play':
+            if self.state == 'ready' and self.opponentReady:
+                self.playNextAudio()
+            return True
+        elif info[1] == 'ghost' and not info[0] == self.client.player:
+            numFaults = info[2]
+            self.changeState('waiting')
+            text = "Karufuda. Faults: you="+str(self.faultCount)+", opp="+numFaults
+            self.infoLabel.config(text=text)
+            return True
+        elif info[0] == self.client.player:
+            return True
+        else:
+            print(message)
+            return True
+
+
   
-    def __init__(self, parent):
+    def __init__(self, parent,multiplayer=False,HOST="99.66.147.56",PORT=3478):
+        self.activeCard = 0
+        self.startTime = -1
+        self.multiplayer = multiplayer
+        if self.multiplayer:
+            self.client = KarutaClient(HOST, PORT)
+            cards = self.client.cards
+            self.cardsLeft = self.client.order
+
+        else:
+            self.client = KarutaSingleClient()
+            cards = range(1,101)
+            self.cardsLeft = range(1,101)
+            random.shuffle(cards)
+            random.shuffle(self.cardsLeft)
+        self.queue = deque([])
         self.fgrid = [[None for col in range(NUM_COLS)] for row in range(6)]
         self.model = [[None for col in range(NUM_COLS)] for row in range(6)]
-        self.state = 'waiting' 
         self.faultCount = 0
         Frame.__init__(self, parent)   
-        self.activeCard = 0
         self.parent = parent
-        self.cardsLeft = [i for i in range(1,101)]
-        random.shuffle(self.cardsLeft)
-        self.initUI()
+        self.initUI(cards)
+        self.changeState('waiting') 
+        if self.multiplayer:
+            self.client.next = 0
+
+
+            self.opponentReady = False
+        else:
+            self.opponentReady = True
+        self.client.nextMove = 0
+        self.pollForUpdates()
+        self.processUpdates()
+
         
 
     def playNextAudio(self):
-        if self.state == 'ready':
-            self.state = 'taking'
+        if self.state == 'ready' and self.opponentReady:
+            self.delta = 100000
+            if self.multiplayer:
+                self.opponentReady = False
             self.faultCount = 0
             self.cheated = False
             self.infoLabel.config(text='Now Playing')
             self.startTime = time.time()
             if self.cardsLeft:
+                previousCard = self.activeCard
                 randomCard = self.cardsLeft.pop()
                 self.activeCard = randomCard
                 self.activeCardRow = -1
@@ -85,14 +199,20 @@ class Karuta(Frame):
                             self.activeCardCol = col
                             break
                 print(randomCard)
-                def doInBackground():
-                    call(['afplay','Audio/Audio'+str(randomCard)+'.m4a'])
-                t= threading.Thread(target=doInBackground, args=())
+                def playCurrentVerse2():
+                    call(['afplay','Audio/Verse2/Audio'+str(previousCard)+'.mp3'])
+
+                t= threading.Thread(target=playCurrentVerse2, args=())
                 t.start()
+                self.parent.after(verse2Durations[previousCard],self.playNextVerse1)
+
+                if self.activeCardRow == -1:
+                    self.parent.after(10000+verse2Durations[previousCard],self.sendFouls)
+
         elif self.state == 'taking':
             randomCard = self.activeCard
             def doInBackground():
-                call(['afplay','Audio/Audio'+str(randomCard)+'.m4a'])
+                call(['afplay','Audio/Verse1/Audio'+str(randomCard)+'.m4a'])
             t= threading.Thread(target=doInBackground, args=())
             t.start()
         else:
@@ -105,46 +225,70 @@ class Karuta(Frame):
         else:
             self.infoLabel.config(text='Row,Col = ('+str(self.activeCardRow)+','+str(self.activeCardCol)+')')
         self.update()
+    def sendFouls(self):
+        self.client.sendMessage('ghost,'+str(self.faultCount))
+        if not self.multiplayer:
+            self.client.oppSendMessage('p2,ghost,0')
+    def playNextVerse1(self):
+        self.changeState('taking')
+        def doPlay():
+
+            call(['afplay','Audio/Verse1/Audio'+str(self.activeCard)+'.m4a'])
+        t = threading.Thread(target=doPlay, args=())
+        t.start()
 
     def rerack(self):
-        if self.state == 'waiting':
-            moved = True
-            while moved:
-                moved = False
-                for row in range(6):
-                    for col in reversed(range(NUM_COLS/2)):
-                        if self.model[row][col].isNone and not self.model[row][col+1].isNone:
-                            self.swapCards((row,col),(row,col+1))
-                            moved = True
-                            # self.model[row][col+1].isNone = True
-                            # self.model[row][col+1].pack_forget()
-                            # self.model[row][col].isNone = False
-                            # self.model[row][col].image = self.model[row][col+1].image
-                            # self.model[row][col].config(image=self.model[row][col].image)
-                            # self.model[row][col].pack(fill=BOTH)
-                    for col in reversed([NUM_COLS-i-1 for i in range(NUM_COLS/2)]):
-                        if self.model[row][col].isNone and not self.model[row][col-1].isNone:
-                            self.swapCards((row,col),(row,col-1))
-                            moved = True
-                            # self.model[row][col-1].isNone = True
-                            # self.model[row][col-1].pack_forget()
-                            # self.model[row][col].isNone = False
-                            # self.model[row][col].image = self.model[row][col-1].image
-                            # self.model[row][col].config(image=self.model[row][col].image)
-                            # self.model[row][col].pack(fill=BOTH)
-                self.update()
+        if self.state == 'waiting' or self.state == 'move-select-start' or self.state == 'move-select-stop':
+            self.client.sendMessage('rerack,'+self.client.player)
+    def performRerack(self,player):
+        if self.multiplayer:
+            self.opponentReady = False
+        self.changeState('waiting')
+        self.infoLabel.config(text='Reracking')
+        if self.multiplayer:
+            if player == 'p1':
+                rows = [3,4,5]
+            else:
+                rows = [0,1,2]
+        else:
+            rows = range(6)
+        moved = True
+        while moved:
+            moved = False
+            for row in rows:
+                for col in reversed(range(NUM_COLS/2)):
+                    if self.model[row][col].isNone and not self.model[row][col+1].isNone:
+                        self.doSwap((row,col),(row,col+1))
+                        moved = True
+                        # self.model[row][col+1].isNone = True
+                        # self.model[row][col+1].pack_forget()
+                        # self.model[row][col].isNone = False
+                        # self.model[row][col].image = self.model[row][col+1].image
+                        # self.model[row][col].config(image=self.model[row][col].image)
+                        # self.model[row][col].pack(fill=BOTH)
+                for col in reversed([NUM_COLS-i-1 for i in range(NUM_COLS/2)]):
+                    if self.model[row][col].isNone and not self.model[row][col-1].isNone:
+                        self.doSwap((row,col),(row,col-1))
+                        moved = True
+                        # self.model[row][col-1].isNone = True
+                        # self.model[row][col-1].pack_forget()
+                        # self.model[row][col].isNone = False
+                        # self.model[row][col].image = self.model[row][col-1].image
+                        # self.model[row][col].config(image=self.model[row][col].image)
+                        # self.model[row][col].pack(fill=BOTH)
+            self.update()
 
 
 
             
         
-    def initUI(self):
+    def initUI(self,cards):
       
         self.parent.title("Karuta")
         
         Style().configure("TButton")
         
-        p1,p2 = randomAssignCards(cards,order)
+        p1,p2 = assignCards(cards,order)
         for row in range(6):
             for col in range(NUM_COLS):
                 if (NUM_COLS-col,row+1) in p1:
@@ -157,12 +301,12 @@ class Karuta(Frame):
         self.p2 = [i for i in p2.values()]
 
         def move():
-            if self.state == 'move-select-start':
-                self.state = 'null'
+            if self.state == 'move-select-start' or self.state == 'move-select-stop':
+                self.changeState('waiting')
                 self.moveButton.config(text='Move')
                 self.infoLabel.config(text='Move cancelled')
             elif self.state == 'waiting':
-                self.state = 'move-select-start'
+                self.changeState('move-select-start')
                 self.infoLabel.config(text='Select card to move')
                 self.moveButton.config(text='Cancel')
             self.update()
@@ -172,8 +316,12 @@ class Karuta(Frame):
 
 
         def playNextAudio():
-            self.playNextAudio()
+            if self.state == 'taking':
+                self.playNextAudio()
+            else:
+                self.client.sendMessage('play')
         b = Button(self,text='Play',command=playNextAudio)
+        self.playButton = b
         b.grid(row=0, column=9)
 
         def reveal():
@@ -181,21 +329,26 @@ class Karuta(Frame):
 
         b = Button(self,text='Reveal',command=reveal)
         b.grid(row=0, column=10)
+        self.revealButton = b
+        b.config(state=DISABLED)
 
         def rerack():
             self.rerack()
 
         b = Button(self,text='Rerack',command=rerack)
         b.grid(row=0, column=11)
+        self.rerackButton = b
+
 
         def ready():
-            if self.state == 'taking' and not self.activeCardRow == -1:
-                self.infoLabel.config(text="Card has not been found yet.")
-                self.update()
-            else:
-                self.infoLabel.config(text="Ready.")
-                self.state = 'ready'
-                self.update()
+            if self.startTime < time.time() - 11:
+                if self.state == 'taking' and not self.activeCardRow == -1:
+                    self.infoLabel.config(text="Card has not been found yet.")
+                    self.update()
+                else:
+                    self.moveButton.config(text="Move")
+                    self.client.sendMessage('ready')
+                    self.update()
 
         b = Button(self,text='Ready',command=ready)
         b.grid(row=0, column=12)
@@ -214,16 +367,20 @@ class Karuta(Frame):
             cardnum = 1
         card = Card(cardnum)
         f = Frame(self, height = card.height, width = card.width)
-        if row == 2:
+        if (row == 2 and self.client.player == 'p1') or (row == 3 and self.client.player == 'p2'):
             f.config(height = card.height+20)
-        if col == 5:
-            f.config(width = card.width)
-        f.grid(row=row+1, column=col)
+        if self.client.player == 'p1':
+            f.grid(row=row+1, column=col)
+        else:
+            f.grid(row=6-row, column=NUM_COLS-col)
         f.pack_propagate(0)
+
         self.fgrid[row][col] = f
         
         pic = Label(f)
         if row <= 2:
+            card.flip()
+        if self.client.player == 'p2':
             card.flip()
         pic.config(image=card.img)
         pic.image = card.img
@@ -235,32 +392,42 @@ class Karuta(Frame):
             if ins.state == 'taking' and not pic.isNone:
                 if card.number == ins.activeCard:
                     endTime = time.time()
-                    if not self.cheated:
-                        delta = round(endTime-self.startTime,2)
-                        print(delta)
-                        self.infoLabel.config(text="Got in "+str(delta))
-                        self.state = 'waiting'
-                    else:
-                        self.infoLabel.config(text=str(self.faultCount)+" faults made")
+                    ins.delta = round(endTime-self.startTime,2)
+                    print(ins.delta)
+                    print("Got in "+str(ins.delta))
+                    ins.client.sendMessage('took,'+str(ins.delta)+','+str(ins.faultCount))
+                    if not ins.multiplayer:
+                        ins.client.oppSendMessage('p2,took,20,0')
+                    ins.changeState('waiting')
+
                     pic.pack_forget()
                     ins.model[pic.row][pic.col].isNone = True
-                elif self.activeCardRow == -1 or not (pic.row <= 2) == (self.activeCardRow <= 2):
-                    self.cheated = True
-                    self.faultCount = 1
-                    self.infoLabel.config(text=str(self.faultCount)+" faults made")
+                elif ins.activeCardRow == -1 or not (pic.row <= 2) == (ins.activeCardRow <= 2):
+                    ins.faultCount = 1
             elif ins.state == 'move-select-start':
-                ins.state = 'move-select-stop'
                 ins.movingPic = (pic.row, pic.col)
                 print('moving card:')
                 print(ins.movingPic)
-                ins.infoLabel.config(text="Card chosen. Select Destination")
+                if (((self.client.player == 'p1' and pic.row > 2) or (self.client.player == 'p2' and pic.row <= 2))\
+                    and not pic.isNone) or not ins.multiplayer:
+                    ins.infoLabel.config(text="Card chosen. Select destination.")
+                    ins.changeState('move-select-stop')
+
+                else:
+                    ins.infoLabel.config(text="Can't move that. Select a different card to move.")
+                ins.moveButton.config(text="Cancel")
+
             elif ins.state == 'move-select-stop':
                 print('to:')
                 print((pic.row, pic.col))
-                ins.swapCards(self.movingPic,(pic.row, pic.col))
-                ins.state = 'move-select-start'
-                ins.moveButton.config(text="Cancel")
-                ins.infoLabel.config(text="Move completed. Select next card.")
+                if ((self.client.player == 'p1' and pic.row <= 2) or (self.client.player == 'p2' and pic.row > 2))\
+                    and not pic.isNone:
+                    ins.infoLabel.config(text="Illegal move. Select a different card to move.")
+                else:
+                    ins.swapCards(self.movingPic,(pic.row, pic.col))
+                    ins.infoLabel.config(text="Move completed. Select next card.")
+
+                ins.changeState('move-select-start')
 
 
 
@@ -279,6 +446,24 @@ class Karuta(Frame):
             self.model[row][col].isNone = False
 
     def swapCards(self,pos1, pos2):
+        row1,col1 = pos1
+        row2,col2 = pos2
+        self.client.sendMessage('swap,'+str(row1)+','+str(col1)+','+str(row2)+','+str(col2))
+        # if (self.client.player == 'p2' and row1 <=2 and row2 <=2) or\
+        #     (self.client.player == 'p1' and row1 > 2 and row2 > 2):
+
+        #     self.client.sendMessage('swap,'+str(row1)+','+str(col1)+','+str(row2)+','+str(col2))
+        # elif (self.client.player == 'p2' and row1 <= 2 and row2 > 2 \
+        #     and not self.model[row1][col1].isNone and self.model[row2][col2].isNone) or \
+        #     (self.client.player == 'p1' and row1 > 2 and row2 <= 2 \
+        #     and not self.model[row1][col1].isNone and self.model[row2][col2].isNone):
+        #     self.client.sendMessage('swap,'+str(row1)+','+str(col1)+','+str(row2)+','+str(col2))
+
+    def doSwap(self,pos1, pos2):
+        self.opponentReady = False
+        if self.state == 'ready':
+            self.changeState('waiting')
+            self.infoLabel.config(text="Reconfirm when ready.")
         row1,col1 = pos1
         row2,col2 = pos2
         pic1 = self.model[row1][col1]
@@ -301,6 +486,25 @@ class Karuta(Frame):
         else:
             pic2.pack_forget()
         self.update()
+    def changeState(self,state):
+        self.state = state
+        if state == 'waiting':
+            self.rerackButton.config(state=NORMAL)
+
+            self.playButton.config(state=DISABLED)
+            self.moveButton.config(state=NORMAL,text="Move")
+        elif state == 'ready':
+            self.rerackButton.config(state=DISABLED)
+            #self.playButton.config(state=NORMAL) #only activate when both players are ready
+            self.moveButton.config(state=DISABLED,text="Move")
+        elif state == 'move-select-start' or state == 'move-select-stop':
+            self.playButton.config(state=DISABLED)
+            self.moveButton.config(state=ACTIVE)
+        elif state == 'taking':
+            self.rerackButton.config(state=DISABLED)
+
+            self.moveButton.config(state=DISABLED,text="Move")
+            self.playButton.config(state=NORMAL)
 
 
 
@@ -309,9 +513,15 @@ class Karuta(Frame):
 
 
 def main():
-  
+    
     root = Tk()
-    app = Karuta(root)
+    if (sys.argv[1] == 'singleplayer'):
+        app = Karuta(root,multiplayer=False)
+    elif len(sys.argv) < 4:
+        app = Karuta(root,multiplayer=True)
+    else:
+        app = Karuta(root,multiplayer=True,HOST=argv[2],PORT=argv[3])
     root.mainloop()
 
-main()
+if __name__ == "__main__":
+    main()
