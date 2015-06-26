@@ -190,7 +190,7 @@ class Karuta(Frame):
                 self.parent.after(verse2Durations[previousCard],self.playNextVerse1)
 
                 if self.activeCardRow == -1:
-                    self.parent.after(10000+verse2Durations,self.sendFouls)
+                    self.parent.after(10000+verse2Durations[previousCard],self.sendFouls)
 
         elif self.state == 'taking':
             randomCard = self.activeCard
