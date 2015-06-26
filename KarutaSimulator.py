@@ -280,10 +280,8 @@ class Karuta(Frame):
             cardnum = 1
         card = Card(cardnum)
         f = Frame(self, height = card.height, width = card.width)
-        if row == 2:
+        if (row == 2 and self.client.player == 'p1') or (row == 3 and self.client.player == 'p2'):
             f.config(height = card.height+20)
-        if col == 5:
-            f.config(width = card.width)
         if self.client.player == 'p1':
             f.grid(row=row+1, column=col)
         else:
@@ -294,6 +292,8 @@ class Karuta(Frame):
         
         pic = Label(f)
         if row <= 2:
+            card.flip()
+        if self.client.player == 'p2':
             card.flip()
         pic.config(image=card.img)
         pic.image = card.img
