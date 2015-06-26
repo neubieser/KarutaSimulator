@@ -464,7 +464,7 @@ class Karuta(Frame):
         elif state == 'ready':
             self.playButton.config(state=NORMAL)
             self.moveButton.config(state=DISABLED,text="Move")
-        elif state == 'move-select-start' or state == 'move-select-stop'
+        elif state == 'move-select-start' or state == 'move-select-stop':
             self.playButton.config(state=DISABLED)
             self.moveButton.config(state=ACTIVE)
         elif state == 'taking':
