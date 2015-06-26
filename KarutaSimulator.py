@@ -100,6 +100,7 @@ class Karuta(Frame):
             self.opponentReady = True
             if self.state == 'ready':
                 self.infoLabel.config(text="Both players are ready.")
+                self.update()
             return True
         elif info[0] == 'swap':
             arr = [int(k) for k in info[1:]]
