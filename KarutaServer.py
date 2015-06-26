@@ -77,9 +77,9 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
     	else:
     		print player + ' sent '+message
     		if player == 'p1':
-    			ks.state['p2'].append(message)
+    			ks.state['moves'].append(player+','+message)
     		elif player == 'p2':
-    			ks.state['p1'].append(message)
+    			ks.state['moves'].append(player+','+message)
     		self.request.sendall('success')
 
 

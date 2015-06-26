@@ -77,7 +77,7 @@ class Karuta(Frame):
 
     def process(self,message):
         info = message.split(',')
-        if info[0] == 'took':
+        if info[1] == 'took' and not info[1] == self.client.player:
             timeTaken = float(info[1])
             numFaults = info[2]
             if timeTaken < time.time() - self.startTime and timeTaken < self.delta:
@@ -96,7 +96,7 @@ class Karuta(Frame):
                 return True
             else:
                 return False
-        elif info[0] == 'ready':
+        elif info[1] == 'ready' and not info[0] == self.client.player:
             self.opponentReady = True
             return True
         elif info[0] == 'swap':
@@ -104,15 +104,15 @@ class Karuta(Frame):
             self.doSwap((arr[0],arr[1]),(arr[2],arr[3]))
             return True
         elif info[0] == 'rerack':
-            self.performRerack()
+            self.performRerack(info[1])
             return True
         elif info[0] == 'play':
-            if self.state == 'ready':
+            if self.state == 'ready' and self.opponentReady:
                 self.playNextAudio()
                 return True
             elif self.state == 'taking':
                 return True
-        elif info[0] == 'ghost':
+        elif info[0] == 'ghost' and not info[0] == self.client.player:
             numFaults = info[1]
             self.state == 'waiting'
             text = "Karufuda. Faults: you="+str(self.faultCount)+", opp="+numFaults
@@ -147,7 +147,6 @@ class Karuta(Frame):
         if self.state == 'ready' and self.opponentReady:
             self.delta = 100000
             self.opponentReady = False
-            self.client.sendMessage("play")
             self.state = 'taking'
             self.faultCount = 0
             self.cheated = False
@@ -194,13 +193,19 @@ class Karuta(Frame):
 
     def rerack(self):
         if self.state == 'waiting' or self.state == 'move-select-start' or self.state == 'move-select-stop':
-            self.client.sendMessage('rerack')
-    def performRerack(self):
+            self.client.sendMessage('rerack,'+self.client.player)
+    def performRerack(self,player):
+        self.opponentReady = False
+        self.state = 'waiting'
         print('reracking')
+        if player == 'p1':
+            rows = [3,4,5]
+        else:
+            rows = [0,1,2]
         moved = True
         while moved:
             moved = False
-            for row in range(6):
+            for row in rows:
                 for col in reversed(range(NUM_COLS/2)):
                     if self.model[row][col].isNone and not self.model[row][col+1].isNone:
                         self.doSwap((row,col),(row,col+1))
@@ -247,7 +252,7 @@ class Karuta(Frame):
 
         def move():
             if self.state == 'move-select-start':
-                self.state = 'null'
+                self.state = 'waiting'
                 self.moveButton.config(text='Move')
                 self.infoLabel.config(text='Move cancelled')
             elif self.state == 'waiting':
@@ -261,7 +266,7 @@ class Karuta(Frame):
 
 
         def playNextAudio():
-            self.playNextAudio()
+            self.client.sendMessage('play')
         b = Button(self,text='Play',command=playNextAudio)
         b.grid(row=0, column=9)
 
@@ -391,6 +396,8 @@ class Karuta(Frame):
             self.client.sendMessage('swap,'+str(row1)+','+str(col1)+','+str(row2)+','+str(col2))
 
     def doSwap(self,pos1, pos2):
+        self.opponentReady = False
+        self.state = 'waiting'
         row1,col1 = pos1
         row2,col2 = pos2
         pic1 = self.model[row1][col1]
