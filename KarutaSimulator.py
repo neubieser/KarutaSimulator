@@ -133,6 +133,7 @@ class Karuta(Frame):
 
     def playNextAudio(self):
         if self.state == 'ready' and self.opponentReady:
+            self.delta = 100000
             self.opponentReady = False
             self.client.sendMessage("play")
             self.state = 'taking'
