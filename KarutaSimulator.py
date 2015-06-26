@@ -28,7 +28,6 @@ order = [(NUM_COLS,1),(1,1),(NUM_COLS-1,1),(2,1),(NUM_COLS,2),(NUM_COLS-1,2),(NU
 
 def randomAssignCards(cards,order):
     cpy = cards[:]
-    random.shuffle(cpy)
     ass1 = {}
     ass2 = {}
     p1 = cpy[:len(cpy)/2]
@@ -108,7 +107,8 @@ class Karuta(Frame):
 
   
     def __init__(self, parent,multiplayer=False):
-
+        self.client = KarutaClient("99.66.147.56", 3478)
+        cards = self.client.cards
         self.queue = deque([])
         self.opponentReady = False
         self.fgrid = [[None for col in range(NUM_COLS)] for row in range(6)]
@@ -120,9 +120,8 @@ class Karuta(Frame):
         self.parent = parent
         self.cardsLeft = [i for i in range(1,101)]
         random.shuffle(self.cardsLeft)
-        self.initUI()
+        self.initUI(cards)
         if multiplayer:
-            self.client = KarutaClient("localhost", 9999)
             self.client.next = 0
             self.client.nextMove = 0
             self.pollForUpdates()
@@ -204,7 +203,7 @@ class Karuta(Frame):
 
             
         
-    def initUI(self):
+    def initUI(self,cards):
       
         self.parent.title("Karuta")
         
@@ -285,8 +284,12 @@ class Karuta(Frame):
             f.config(height = card.height+20)
         if col == 5:
             f.config(width = card.width)
-        f.grid(row=row+1, column=col)
+        if self.client.player == 'p1':
+            f.grid(row=row+1, column=col)
+        else:
+            f.grid(row=6-row-1, column=NUM_COLS-col)
         f.pack_propagate(0)
+
         self.fgrid[row][col] = f
         
         pic = Label(f)

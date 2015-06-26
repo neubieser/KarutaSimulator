@@ -1,4 +1,5 @@
 import SocketServer
+import random
 
 class KarutaServerState():
 	def __init__(self):
@@ -6,6 +7,13 @@ class KarutaServerState():
 		self.state['p1'] = []
 		self.state['p2'] = []
 		self.state['moves'] = []
+		cards = [i for i in range(1,101)]
+		random.shuffle(cards)
+		mystr = ''
+		for i in cards:
+			mystr = mystr + str(i)+','
+		mystr = mystr[:-1]
+		self.cards = mystr
 		self.p1 = None
 		self.p2 = None
 		
@@ -32,9 +40,9 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
 	    	elif ks.p2 is None:
 	    		ks.p2 = self
 	    	if ks.p1 is self:
-        		self.request.sendall('p1')
+        		self.request.sendall('p1,'+ks.cards)
         	elif ks.p2 is self:
-        		self.request.sendall('p2')
+        		self.request.sendall('p2,'+ks.cards)
         else:
         	player = self.data[:2]
         	message = self.data[2:]
@@ -73,7 +81,7 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
 
 
 if __name__ == "__main__":
-    HOST, PORT = "localhost", 9999
+    HOST, PORT = "192.168.1.88", 3478
 
     # Create the server, binding to localhost on port 9999
     server = SocketServer.TCPServer((HOST, PORT), MyTCPHandler)

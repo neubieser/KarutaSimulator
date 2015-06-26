@@ -12,12 +12,18 @@ class KarutaClient:
 		received = self.sendMessage('join')
 		
 
-		if received == 'p1':
+		if received[:2] == 'p1':
 			self.player = 'p1'
+			cards = received[3:].split(',')
+			self.cards = [int(i) for i in cards]
 			print 'connected as p1'
+			print self.cards
 		elif received == 'p2':
 			self.player = 'p2'
+			cards = received[3:].split(',')
+			self.cards = [int(i) for i in cards]
 			print 'connected as p2'
+			print self.cards
 		else:
 			print 'could not connect'
 	def sendMessage(self,message):
