@@ -127,7 +127,7 @@ class Karuta(Frame):
             return True
         elif info[1] == 'ghost' and not info[0] == self.client.player:
             numFaults = info[2]
-            self.state == 'waiting'
+            self.state = 'waiting'
             text = "Karufuda. Faults: you="+str(self.faultCount)+", opp="+numFaults
             self.infoLabel.config(text=text)
             return True
@@ -293,7 +293,10 @@ class Karuta(Frame):
 
 
         def playNextAudio():
-            self.client.sendMessage('play')
+            if self.state == 'taking':
+                self.playNextAudio()
+            else:
+                self.client.sendMessage('play')
         b = Button(self,text='Play',command=playNextAudio)
         b.grid(row=0, column=9)
 
