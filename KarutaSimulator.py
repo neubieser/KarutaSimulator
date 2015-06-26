@@ -285,7 +285,7 @@ class Karuta(Frame):
         if self.client.player == 'p1':
             f.grid(row=row+1, column=col)
         else:
-            f.grid(row=6-row-1, column=NUM_COLS-col)
+            f.grid(row=6-row, column=NUM_COLS-col)
         f.pack_propagate(0)
 
         self.fgrid[row][col] = f
