@@ -27,7 +27,7 @@ order = [(NUM_COLS,1),(1,1),(NUM_COLS-1,1),(2,1),(NUM_COLS,2),(NUM_COLS-1,2),(NU
          (2,3),(NUM_COLS-2,3),(NUM_COLS-3,1),(3,2),(NUM_COLS-3,2),(3,3),(4,1),(NUM_COLS-4,1),(NUM_COLS-5,1),(4,2),(4,3)]
 with open('Audio/Verse2/durations.txt','r') as f:
     durations = f.readlines()
-    verse2Durations = [float(i) for i in durations]
+    verse2Durations = [int(1000*float(i)) for i in durations]
 
 
 def assignCards(cards,order):
@@ -191,7 +191,7 @@ class Karuta(Frame):
                 self.parent.after(verse2Durations[previousCard],self.playNextVerse1)
 
                 if self.activeCardRow == -1:
-                    self.parent.after(10000,self.sendFouls)
+                    self.parent.after(10000+verse2Durations,self.sendFouls)
 
         elif self.state == 'taking':
             randomCard = self.activeCard
