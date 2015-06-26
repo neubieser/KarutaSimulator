@@ -264,7 +264,7 @@ class Karuta(Frame):
         b.grid(row=0, column=11)
 
         def ready():
-            if self.startTime > time.time() + 15
+            if self.startTime > time.time() + 15:
                 if self.state == 'taking' and not self.activeCardRow == -1:
                     self.infoLabel.config(text="Card has not been found yet.")
                     self.update()
