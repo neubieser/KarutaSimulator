@@ -83,6 +83,7 @@ class Karuta(Frame):
             if timeTaken < time.time() - self.startTime or timeTaken < self.delta:
                 self.state = 'waiting'
                 text = "Opponent won the card. Faults: you="+str(self.faultCount)+", opp="+numFaults
+                self.client.sendMessage('took,'+str(self.delta)+','+str(self.faultCount))
                 self.infoLabel.config(text=text)
                 pic = self.model[self.activeCardRow][self.activeCardCol]
                 pic.pack_forget()
@@ -91,6 +92,7 @@ class Karuta(Frame):
             elif timeTaken > self.delta:
                 text = "You won the card. Faults: you="+str(self.faultCount)+", opp="+numFaults
                 self.infoLabel.config(text=text)
+                self.state = 'waiting'
                 return True
             else:
                 return False
