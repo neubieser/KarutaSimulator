@@ -251,7 +251,7 @@ class Karuta(Frame):
         self.p2 = [i for i in p2.values()]
 
         def move():
-            if self.state == 'move-select-start':
+            if self.state == 'move-select-start' or self.state == 'move-select-stop':
                 self.state = 'waiting'
                 self.moveButton.config(text='Move')
                 self.infoLabel.config(text='Move cancelled')
@@ -358,18 +358,24 @@ class Karuta(Frame):
                 print(ins.movingPic)
                 if ((self.client.player == 'p1' and pic.row > 2) or (self.client.player == 'p2' and pic.row <= 2))\
                     and not pic.isNone:
-                    ins.infoLabel.config(text="Card chosen. Select Destination")
+                    ins.infoLabel.config(text="Card chosen. Select destination.")
                     ins.state = 'move-select-stop'
 
                 else:
-                    ins.infoLabel.config(text="Can't move that")
+                    ins.infoLabel.config(text="Can't move that. Select a different card to move.")
+                ins.moveButton.config(text="Cancel")
+
             elif ins.state == 'move-select-stop':
                 print('to:')
                 print((pic.row, pic.col))
-                ins.swapCards(self.movingPic,(pic.row, pic.col))
+                if ((self.client.player == 'p1' and pic.row <= 2) or (self.client.player == 'p2' and pic.row > 2))\
+                    and not pic.isNone:
+                    ins.infoLabel.config(text="Illegal move. Select a different card to move.")
+                else:
+                    ins.swapCards(self.movingPic,(pic.row, pic.col))
+                    ins.infoLabel.config(text="Move completed. Select next card.")
+
                 ins.state = 'move-select-start'
-                ins.moveButton.config(text="Cancel")
-                ins.infoLabel.config(text="Move completed. Select next card.")
 
 
 
