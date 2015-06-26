@@ -77,7 +77,7 @@ class Karuta(Frame):
 
     def process(self,message):
         info = message.split(',')
-        if info[1] == 'took' and not info[1] == self.client.player:
+        if info[1] == 'took' and not info[0] == self.client.player:
             timeTaken = float(info[2])
             numFaults = info[3]
             if timeTaken < time.time() - self.startTime and timeTaken < self.delta:
@@ -102,6 +102,11 @@ class Karuta(Frame):
                 self.infoLabel.config(text="Both players are ready.")
                 self.update()
             return True
+        elif info[1] == 'ready' and info[0] == self.client.player:
+            self.state == 'ready'
+            if self.opponentReady:
+                self.infoLabel.config(text="Both players are ready.")
+                self.update()
         elif info[0] == 'swap':
             arr = [int(k) for k in info[1:]]
             self.doSwap((arr[0],arr[1]),(arr[2],arr[3]))

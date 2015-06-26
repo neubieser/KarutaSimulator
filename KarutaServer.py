@@ -1,4 +1,5 @@
 import SocketServer
+import socket
 import random
 
 class KarutaServerState():
