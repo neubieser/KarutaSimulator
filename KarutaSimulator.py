@@ -152,7 +152,6 @@ class Karuta(Frame):
         self.model = [[None for col in range(NUM_COLS)] for row in range(6)]
         self.faultCount = 0
         Frame.__init__(self, parent)   
-        self.activeCard = 0
         self.parent = parent
         self.cardsLeft = self.client.order
         self.initUI(cards)
@@ -309,13 +308,16 @@ class Karuta(Frame):
 
         b = Button(self,text='Reveal',command=reveal)
         b.grid(row=0, column=10)
+        self.revealButton = b
+        b.config(state=DISABLED)
 
         def rerack():
             self.rerack()
-        self.rerackButton = b
 
         b = Button(self,text='Rerack',command=rerack)
         b.grid(row=0, column=11)
+        self.rerackButton = b
+
 
         def ready():
             if self.startTime < time.time() - 11:
@@ -369,25 +371,25 @@ class Karuta(Frame):
             if ins.state == 'taking' and not pic.isNone:
                 if card.number == ins.activeCard:
                     endTime = time.time()
-                    self.delta = round(endTime-self.startTime,2)
-                    print(self.delta)
-                    print("Got in "+str(self.delta))
-                    self.client.sendMessage('took,'+str(self.delta)+','+str(self.faultCount))
+                    ins.delta = round(endTime-self.startTime,2)
+                    print(ins.delta)
+                    print("Got in "+str(ins.delta))
+                    ins.client.sendMessage('took,'+str(ins.delta)+','+str(ins.faultCount))
 
-                    self.changeState('waiting')
+                    ins.changeState('waiting')
 
                     pic.pack_forget()
                     ins.model[pic.row][pic.col].isNone = True
-                elif self.activeCardRow == -1 or not (pic.row <= 2) == (self.activeCardRow <= 2):
-                    self.faultCount = 1
-            elif ins.state == 'move-select-start':
+                elif ins.activeCardRow == -1 or not (pic.row <= 2) == (ins.activeCardRow <= 2):
+                    ins.faultCount = 1
+            elif ins.changeState('move-select-start'):
                 ins.movingPic = (pic.row, pic.col)
                 print('moving card:')
                 print(ins.movingPic)
                 if ((self.client.player == 'p1' and pic.row > 2) or (self.client.player == 'p2' and pic.row <= 2))\
                     and not pic.isNone:
                     ins.infoLabel.config(text="Card chosen. Select destination.")
-                    ins.state = 'move-select-stop'
+                    ins.changeState('move-select-stop')
 
                 else:
                     ins.infoLabel.config(text="Can't move that. Select a different card to move.")
@@ -403,7 +405,7 @@ class Karuta(Frame):
                     ins.swapCards(self.movingPic,(pic.row, pic.col))
                     ins.infoLabel.config(text="Move completed. Select next card.")
 
-                ins.state = 'move-select-start'
+                ins.changeState('move-select-start')
 
 
 
@@ -470,7 +472,7 @@ class Karuta(Frame):
             self.moveButton.config(state=NORMAL,text="Move")
         elif state == 'ready':
             self.rerackButton.config(state=DISABLED)
-            self.playButton.config(state=NORMAL)
+            #self.playButton.config(state=NORMAL) #only activate when both players are ready
             self.moveButton.config(state=DISABLED,text="Move")
         elif state == 'move-select-start' or state == 'move-select-stop':
             self.playButton.config(state=DISABLED)
