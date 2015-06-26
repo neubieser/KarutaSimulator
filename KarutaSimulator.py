@@ -418,6 +418,7 @@ class Karuta(Frame):
         self.opponentReady = False
         if self.state == 'ready':
             self.state = 'waiting'
+            self.infoLabel.config(text="Confirm when ready.")
         row1,col1 = pos1
         row2,col2 = pos2
         pic1 = self.model[row1][col1]
