@@ -25,6 +25,10 @@ scale = .14
 cards = [i for i in range(1,101)]
 order = [(NUM_COLS,1),(1,1),(NUM_COLS-1,1),(2,1),(NUM_COLS,2),(NUM_COLS-1,2),(NUM_COLS,3),(1,2),(NUM_COLS-2,1),(3,1),(2,2),(NUM_COLS-2,2),(1,3),(NUM_COLS-1,3),\
          (2,3),(NUM_COLS-2,3),(NUM_COLS-3,1),(3,2),(NUM_COLS-3,2),(3,3),(4,1),(NUM_COLS-4,1),(NUM_COLS-5,1),(4,2),(4,3)]
+with open('Audio/Verse2/durations.txt','r') as f:
+    durations = f.readlines()
+    verse2Durations = [float(i) for i in durations]
+
 
 def assignCards(cards,order):
     cpy = cards[:]
@@ -168,6 +172,7 @@ class Karuta(Frame):
             self.infoLabel.config(text='Now Playing')
             self.startTime = time.time()
             if self.cardsLeft:
+                previousCard = self.activeCard
                 randomCard = self.cardsLeft.pop()
                 self.activeCard = randomCard
                 self.activeCardRow = -1
@@ -178,10 +183,12 @@ class Karuta(Frame):
                             self.activeCardCol = col
                             break
                 print(randomCard)
-                def doInBackground():
-                    call(['afplay','Audio/Audio'+str(randomCard)+'.m4a'])
+                def playCurrentVerse2():
+                    call(['afplay','Audio/Audio/Verse2'+str(previousCard)+'.mp3'])
+
                 t= threading.Thread(target=doInBackground, args=())
                 t.start()
+                self.root.after(verse2Durations[previousCard],self.playNextVerse1)
 
                 if self.activeCardRow == -1:
                     self.parent.after(10000,self.sendFouls)
@@ -204,7 +211,11 @@ class Karuta(Frame):
         self.update()
     def sendFouls(self):
         self.client.sendMessage('ghost,'+str(self.faultCount))
-
+    def playNextVerse1(self):
+        def doPlay():
+            call(['afplay','Audio/Audio/Verse1'+str(self.activeCard)+'.m4a'])
+        t = threading.Thread(target=doPlay, args=())
+        t.start()
 
     def rerack(self):
         if self.state == 'waiting' or self.state == 'move-select-start' or self.state == 'move-select-stop':
@@ -418,7 +429,7 @@ class Karuta(Frame):
         self.opponentReady = False
         if self.state == 'ready':
             self.state = 'waiting'
-            self.infoLabel.config(text="Confirm when ready.")
+            self.infoLabel.config(text="Reconfirm when ready.")
         row1,col1 = pos1
         row2,col2 = pos2
         pic1 = self.model[row1][col1]
