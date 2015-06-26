@@ -382,7 +382,7 @@ class Karuta(Frame):
                     ins.model[pic.row][pic.col].isNone = True
                 elif ins.activeCardRow == -1 or not (pic.row <= 2) == (ins.activeCardRow <= 2):
                     ins.faultCount = 1
-            elif ins.changeState('move-select-start'):
+            elif ins.state == 'move-select-start':
                 ins.movingPic = (pic.row, pic.col)
                 print('moving card:')
                 print(ins.movingPic)
