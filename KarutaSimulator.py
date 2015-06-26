@@ -1,5 +1,5 @@
 from __future__ import print_function
-from Tkinter import Tk, W, E, BOTH
+from Tkinter import Tk, W, E, BOTH, NORMAL, ACTIVE, DISABLED
 from ttk import Frame, Button, Label, Style
 from ttk import Entry
 from PIL import ImageTk, Image
