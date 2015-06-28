@@ -393,7 +393,7 @@ class Karuta(Frame):
         
         def clicked(pic,ins,card):
             if ins.state == 'taking' and not pic.isNone:
-                if card.number == ins.activeCard:
+                if pic.card.number == ins.activeCard:
                     endTime = time.time()
                     ins.delta = round(endTime-self.startTime,2)
                     print(ins.delta)
