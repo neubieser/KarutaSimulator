@@ -5,31 +5,31 @@ import time
 
 
 class KarutaClient:
-	def __init__(self, HOST, PORT):
+	def __init__(self, HOST, PORT, player):
 		self.player = ''
 		self.HOST = HOST
 		self.PORT = PORT
 		received = self.sendMessage('join')
-		
-
-		if received[:2] == 'p1':
-			self.player = 'p1'
-			cards = received[3:].split(',')
-			orders = [int(i) for i in cards]
-			self.cards = orders[:100]
-			self.order = orders[100:]
-			print 'connected as p1'
-			print self.cards
-		elif received[:2] == 'p2':
-			self.player = 'p2'
-			cards = received[3:].split(',')
-			orders = [int(i) for i in cards]
-			self.cards = orders[:100]
-			self.order = orders[100:]
-			print 'connected as p2'
-			print self.cards
-		else:
-			print 'could not connect'
+		self.player = player
+		if player == ''
+			if received[:2] == 'p1':
+				self.player = 'p1'
+				cards = received[3:].split(',')
+				orders = [int(i) for i in cards]
+				self.cards = orders[:100]
+				self.order = orders[100:]
+				print 'connected as p1'
+				print self.cards
+			elif received[:2] == 'p2':
+				self.player = 'p2'
+				cards = received[3:].split(',')
+				orders = [int(i) for i in cards]
+				self.cards = orders[:100]
+				self.order = orders[100:]
+				print 'connected as p2'
+				print self.cards
+			else:
+				print 'could not connect'
 	def sendMessage(self,message):
 		if message == 'join' or not self.player == '':
 			message = self.player+message

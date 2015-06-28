@@ -61,15 +61,17 @@ class Card:
 class Karuta(Frame):
 
     def pollForUpdates(self):
-        #response = self.client.sendMessage('get,'+str(self.client.next))
-        responseMove = self.client.sendMessage('getmove,'+str(self.client.nextMove))
-        #if not response == '':
-            #self.client.next = self.client.next + 1
-            #self.queue.append(response)
-        if not responseMove == '':
-            self.client.nextMove = self.client.nextMove + 1
-            self.queue.append(responseMove)
-        self.parent.after(200,self.pollForUpdates)
+        try:
+            #response = self.client.sendMessage('get,'+str(self.client.next))
+            responseMove = self.client.sendMessage('getmove,'+str(self.client.nextMove))
+            #if not response == '':
+                #self.client.next = self.client.next + 1
+                #self.queue.append(response)
+            if not responseMove == '':
+                self.client.nextMove = self.client.nextMove + 1
+                self.queue.append(responseMove)
+        finally:
+            self.parent.after(200,self.pollForUpdates)
 
     def processUpdates(self):
         if not len(self.queue) == 0:
@@ -142,12 +144,12 @@ class Karuta(Frame):
 
 
   
-    def __init__(self, parent,multiplayer=False,HOST="99.66.147.56",PORT=3478):
+    def __init__(self, parent,multiplayer=False,HOST="99.66.147.56",PORT=3478,player=''):
         self.activeCard = 0
         self.startTime = -1
         self.multiplayer = multiplayer
         if self.multiplayer:
-            self.client = KarutaClient(HOST, PORT)
+            self.client = KarutaClient(HOST, PORT, player)
             cards = self.client.cards
             self.cardsLeft = self.client.order
 
@@ -526,8 +528,10 @@ def main():
         app = Karuta(root,multiplayer=False)
     elif len(sys.argv) < 4:
         app = Karuta(root,multiplayer=True)
-    else:
+    elif len(sys.argv) < 5:
         app = Karuta(root,multiplayer=True,HOST=argv[2],PORT=argv[3])
+    else:
+        app = Karuta(root,multiplayer=True,HOST=argv[2],PORT=argv[3],player=argv[4])
     root.mainloop()
 
 if __name__ == "__main__":
