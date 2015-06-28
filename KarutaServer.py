@@ -50,6 +50,9 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
         	elif ks.p2 is self:
         		print 'p2 connected'
         		self.request.sendall('p2,'+ks.cards)
+            	else:
+                	print 'reconnector'
+                	self.request.sendall('p3,'+ks.cards)
         else:
         	player = self.data[:2]
         	message = self.data[2:]

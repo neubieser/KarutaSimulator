@@ -149,7 +149,7 @@ class Karuta(Frame):
         self.startTime = -1
         self.multiplayer = multiplayer
         if self.multiplayer:
-            self.client = KarutaClient(HOST, PORT, player)
+            self.client = KarutaClient(HOST, int(PORT), player)
             cards = self.client.cards
             self.cardsLeft = self.client.order
 
@@ -529,9 +529,9 @@ def main():
     elif len(sys.argv) < 4:
         app = Karuta(root,multiplayer=True)
     elif len(sys.argv) < 5:
-        app = Karuta(root,multiplayer=True,HOST=argv[2],PORT=argv[3])
+        app = Karuta(root,multiplayer=True,HOST=sys.argv[2],PORT=sys.argv[3])
     else:
-        app = Karuta(root,multiplayer=True,HOST=argv[2],PORT=argv[3],player=argv[4])
+        app = Karuta(root,multiplayer=True,HOST=sys.argv[2],PORT=sys.argv[3],player=sys.argv[4])
     root.mainloop()
 
 if __name__ == "__main__":

@@ -10,26 +10,28 @@ class KarutaClient:
 		self.HOST = HOST
 		self.PORT = PORT
 		received = self.sendMessage('join')
-		self.player = player
-		if player == ''
-			if received[:2] == 'p1':
-				self.player = 'p1'
-				cards = received[3:].split(',')
-				orders = [int(i) for i in cards]
-				self.cards = orders[:100]
-				self.order = orders[100:]
-				print 'connected as p1'
-				print self.cards
-			elif received[:2] == 'p2':
-				self.player = 'p2'
-				cards = received[3:].split(',')
-				orders = [int(i) for i in cards]
-				self.cards = orders[:100]
-				self.order = orders[100:]
-				print 'connected as p2'
-				print self.cards
-			else:
-				print 'could not connect'
+
+		if received[:2] == 'p1':
+			self.player = 'p1'
+			cards = received[3:].split(',')
+			orders = [int(i) for i in cards]
+			self.cards = orders[:100]
+			self.order = orders[100:]
+			print 'connected as p1'
+		elif received[:2] == 'p2':
+			self.player = 'p2'
+			cards = received[3:].split(',')
+			orders = [int(i) for i in cards]
+			self.cards = orders[:100]
+			self.order = orders[100:]
+			print 'connected as p2'
+		else:
+			self.player = player
+			cards = received[3:].split(',')
+			orders = [int(i) for i in cards]
+			self.cards = orders[:100]
+			self.order = orders[100:]
+			print 'connected as ' + self.player
 	def sendMessage(self,message):
 		if message == 'join' or not self.player == '':
 			message = self.player+message
