@@ -464,7 +464,8 @@ class Karuta(Frame):
         #     self.client.sendMessage('swap,'+str(row1)+','+str(col1)+','+str(row2)+','+str(col2))
 
     def doSwap(self,pos1, pos2):
-        self.opponentReady = False
+        if self.multiplayer:
+            self.opponentReady = False
         if self.state == 'ready':
             self.changeState('waiting')
             self.infoLabel.config(text="Reconfirm when ready.")
