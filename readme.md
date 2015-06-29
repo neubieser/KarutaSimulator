@@ -21,3 +21,6 @@ For multiplayer:
 * For now, you have to restart the server every time you play a new game, or someone disconnects
 
 This is very much WIP
+
+Audio obtained from Copyright (C) 2005-2010 Naniwazu, http://homepage3.nifty.com/naniwazu/
+Images from http://www.memrise.com/course/166253/charlottesville-karuta-societys-guide-to-kimariji/
